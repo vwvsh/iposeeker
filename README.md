@@ -30,6 +30,16 @@ python -m http.server 4173
 
 它会在每天 06:30（北京时间）自动运行，更新 `data/ipo-feed.json` 并提交到仓库。也可以在 GitHub 仓库的 `Actions` 页面手动运行 `Update IPO Feed`。
 
+仓库还包含每日邮件简报任务：
+
+- `.github/workflows/daily-email-brief.yml`
+- `scripts/send_daily_brief.py`
+
+它会在每天 09:00（北京时间）发送中文简报到配置的收件邮箱。使用前需要在 GitHub 仓库 `Settings -> Secrets and variables -> Actions` 添加：
+
+- `MAIL_USERNAME`：发件邮箱地址
+- `MAIL_PASSWORD`：发件邮箱 SMTP 授权码，不是登录密码
+
 当前自动同步逻辑：
 
 - 美股：自动读取 StockAnalysis IPO Calendar，并补充公司页 CEO、行业和简介。
