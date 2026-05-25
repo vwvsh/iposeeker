@@ -1,9 +1,8 @@
 {
-  "updatedAt": "2026-05-25T15:58:13+08:00",
+  "updatedAt": "2026-05-25T08:23:41+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
-    "美股自动同步失败，沿用上一版美股数据：<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>",
     "港股和A股暂放在手工补充文件中，避免使用未验证来源自动生成错误行情。",
     "后续可接入 HKEX、交易所公告或授权数据 API 后改为自动抓取。"
   ],
@@ -49,50 +48,6 @@
       "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=07688",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO"
-    },
-    {
-      "id": "us-lcln",
-      "market": "US",
-      "code": "LCLN",
-      "name": "Lincoln International, Inc.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-05-20",
-      "issuePrice": "20.00 USD",
-      "currentPrice": "23.05 USD",
-      "sector": "金融服务",
-      "tags": [
-        "投行顾问",
-        "资本市场",
-        "NASDAQ",
-        "美股历史"
-      ],
-      "ceo": "待核实",
-      "summary": "Lincoln International 是金融服务公司，业务围绕资本市场、并购和企业融资顾问服务。归类在金融服务与投资银行板块。",
-      "marketUrl": "https://finance.yahoo.com/quote/LCLN",
-      "sourceUrl": "https://stockanalysis.com/ipos/2026/",
-      "sourceName": "StockAnalysis 2026 IPOs"
-    },
-    {
-      "id": "us-cnxu",
-      "market": "US",
-      "code": "CNXU",
-      "name": "Conexeu Sciences Inc.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-05-21",
-      "issuePrice": "13.50 USD",
-      "currentPrice": "13.07 USD",
-      "sector": "再生医学",
-      "tags": [
-        "医疗科技",
-        "组织修复",
-        "NASDAQ",
-        "美股历史"
-      ],
-      "ceo": "Miles Harrison",
-      "summary": "Conexeu Sciences 是再生组织平台公司，围绕可吸收支架和组织修复技术推进医疗应用。归类在医疗科技与生物材料板块。",
-      "marketUrl": "https://finance.yahoo.com/quote/CNXU",
-      "sourceUrl": "https://stockanalysis.com/ipos/2026/",
-      "sourceName": "StockAnalysis 2026 IPOs"
     },
     {
       "id": "h-06872",
@@ -189,20 +144,19 @@
       "name": "BW Industrial Holdings Inc.",
       "exchange": "NYSEAMERICAN",
       "listingDate": "2026-05-27",
-      "issuePrice": "6.00-7.00 USD",
+      "issuePrice": "6.00 - 7.00 USD",
       "currentPrice": null,
-      "sector": "工业工程",
+      "sector": "Industrials",
       "tags": [
-        "EPC",
-        "工业系统",
-        "工程建设",
+        "Stock Lists",
+        "NYSEAMERICAN",
         "美股"
       ],
       "ceo": "Yunlong Zhang",
-      "summary": "BW Industrial 是美国工程、采购与施工公司，为多个工业领域的关键工艺系统提供设计、建设和集成服务。归类在工业工程与基础设施服务板块。",
+      "summary": "BW Industrial is a U.S.-based engineering, procurement, and construction (“EPC”) company that provides design, construction, and integration services for critical process systems across multiple industrial sectors. We serve companies in automotive parts manufa",
       "marketUrl": "https://stockanalysis.com/stocks/bwgc/",
       "sourceUrl": "https://stockanalysis.com/stocks/bwgc/company/",
-      "sourceName": "StockAnalysis Company Profile"
+      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-riku",
@@ -211,20 +165,40 @@
       "name": "Riku Dining Group Limited",
       "exchange": "NASDAQ",
       "listingDate": "2026-05-27",
-      "issuePrice": "4.00-6.00 USD",
+      "issuePrice": "4.00 - 6.00 USD",
       "currentPrice": null,
-      "sector": "餐饮连锁",
+      "sector": "Consumer Discretionary",
       "tags": [
-        "日本餐饮",
-        "加盟运营",
-        "加拿大",
-        "香港"
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
       ],
-      "ceo": "Johnny Luk Ching Po",
-      "summary": "Riku Dining Group 经营和特许经营日本主题餐饮品牌，覆盖加拿大与香港市场，包括 Ajisen Ramen、Yakiniku Kakura 等。归类在可选消费与餐饮服务板块。",
+      "ceo": "Mr. Johnny Luk Ching Po",
+      "summary": "Riku Dining Group is a dynamic and growing international restaurant operator with a diverse portfolio of Japanese-themed dining concepts across Canada and Hong Kong. Through our Operating Subsidiaries, we deliver authentic Japanese culinary experiences by hold",
       "marketUrl": "https://stockanalysis.com/stocks/riku/",
       "sourceUrl": "https://stockanalysis.com/stocks/riku/company/",
-      "sourceName": "StockAnalysis Company Profile"
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-spcx",
+      "market": "US",
+      "code": "SPCX",
+      "name": "Space Exploration Technologies Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-12",
+      "issuePrice": "- USD",
+      "currentPrice": null,
+      "sector": "Industrials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Elon Musk",
+      "summary": "Founded in 2002, SpaceX is the only company building the integrated hardware and software infrastructure of the future across space, connectivity, and AI. At our core, we are builders. We design, manufacture, launch, and operate products and services built on ",
+      "marketUrl": "https://stockanalysis.com/stocks/spcx/",
+      "sourceUrl": "https://stockanalysis.com/stocks/spcx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
 }
