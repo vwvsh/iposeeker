@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IPO Radar</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">A 股 / H 股 / 美股 IPO 雷达</p>
+          <h1 id="page-title">上市前 3 天观察台</h1>
+          <p class="hero-copy">聚合即将开始交易的新股，收藏重点标的，并在上市后持续追踪首日表现与现价。</p>
+        </div>
+        <div class="status-panel" aria-label="数据状态">
+          <span class="pulse"></span>
+          <div>
+            <strong id="feed-status">正在读取数据</strong>
+            <small id="feed-time">--</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="筛选工具">
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="输入股票代码、名称、板块" autocomplete="off" />
+        </div>
+        <div class="segments" role="tablist" aria-label="视图">
+          <button class="segment is-active" data-view="upcoming" type="button">3 天内</button>
+          <button class="segment" data-view="favorites" type="button">收藏</button>
+          <button class="segment" data-view="history" type="button">已上市历史</button>
+          <button class="segment" data-view="all" type="button">全部</button>
+        </div>
+        <div class="market-filter" aria-label="市场">
+          <label><input type="checkbox" value="A" checked />A 股</label>
+          <label><input type="checkbox" value="H" checked />H 股</label>
+          <label><input type="checkbox" value="US" checked />美股</label>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="概要">
+        <article>
+          <small>3 天内待上市</small>
+          <strong id="metric-upcoming">0</strong>
+        </article>
+        <article>
+          <small>已收藏</small>
+          <strong id="metric-favorites">0</strong>
+        </article>
+        <article>
+          <small>已上市记录</small>
+          <strong id="metric-history">0</strong>
+        </article>
+      </section>
+
+      <section class="board" aria-live="polite">
+        <div class="board-head">
+          <div>
+            <p class="eyebrow">Watchlist</p>
+            <h2 id="board-title">3 天内即将交易</h2>
+          </div>
+          <button id="refresh-button" class="ghost-button" type="button">刷新</button>
+        </div>
+        <div id="stock-grid" class="stock-grid"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <strong>没有匹配的新股</strong>
+          <span>调整市场、搜索词或切换视图。</span>
+        </div>
+      </section>
+    </main>
+
+    <template id="stock-card-template">
+      <article class="stock-card">
+        <header>
+          <div>
+            <span class="market-badge"></span>
+            <h3></h3>
+            <p class="code-line"></p>
+          </div>
+          <button class="favorite-button" type="button" aria-label="收藏">☆</button>
+        </header>
+        <p class="summary"></p>
+        <div class="leader-row">
+          <span>CEO / 负责人</span>
+          <strong class="ceo-name">--</strong>
+        </div>
+        <div class="tags"></div>
+        <dl class="quote-grid">
+          <div>
+            <dt>发行价</dt>
+            <dd class="issue-price">--</dd>
+          </div>
+          <div>
+            <dt>上市首日</dt>
+            <dd class="listing-date">--</dd>
+          </div>
+          <div>
+            <dt>当前价格</dt>
+            <dd class="current-price">--</dd>
+          </div>
+        </dl>
+        <a class="source-link" href="#" target="_blank" rel="noopener noreferrer">数据来源</a>
+        <a class="market-link" href="#" target="_blank" rel="noopener noreferrer">查看实时行情</a>
+      </article>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

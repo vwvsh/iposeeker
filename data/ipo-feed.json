@@ -1,0 +1,227 @@
+{
+  "updatedAt": "2026-05-25T14:30:00+08:00",
+  "notes": [
+    "真实数据第一版：美股来自 StockAnalysis IPO Calendar 与公司页；港股上市日来自 HKEX Newly Listed Securities，业务简介参考公开 IPO 资料。",
+    "截至本次整理，未找到未来 3 天内 A 股开始交易的可靠公开记录；5月25日有新睿电子申购，但不是开始交易。"
+  ],
+  "items": [
+    {
+      "id": "h-00901",
+      "market": "H",
+      "code": "00901",
+      "name": "SDMC",
+      "exchange": "HKEX",
+      "listingDate": "2026-05-27",
+      "issuePrice": "32.80 HKD",
+      "currentPrice": null,
+      "sector": "智能终端",
+      "tags": [
+        "加密芯片",
+        "数字电视机顶盒",
+        "智能家居",
+        "港股主板"
+      ],
+      "ceo": "待核实",
+      "summary": "深圳 SDMC 科技主要从事加密芯片、数字电视机顶盒及智能家居产品研发、生产和销售，并拓展人工智能应用。归类在智能终端与消费电子板块。",
+      "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=00901",
+      "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
+      "sourceName": "HKEX / 公开 IPO 资料"
+    },
+    {
+      "id": "h-02723",
+      "market": "H",
+      "code": "02723",
+      "name": "DEEPZERO",
+      "exchange": "HKEX",
+      "listingDate": "2026-05-27",
+      "issuePrice": "43.50-55.50 HKD",
+      "currentPrice": null,
+      "sector": "AI 营销",
+      "tags": [
+        "智能广告",
+        "数据管理",
+        "企业 AI Agent",
+        "港股主板"
+      ],
+      "ceo": "待核实",
+      "summary": "北京深演智能科技以 AlphaDesk、AlphaData 和 Deep Agent 等产品为企业提供智能广告投放、数据管理和营销自动化服务。归类在媒体、营销科技与企业 AI 板块。",
+      "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=02723",
+      "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
+      "sourceName": "HKEX / etnet IPO"
+    },
+    {
+      "id": "h-03310",
+      "market": "H",
+      "code": "03310",
+      "name": "VIEWTRIX TECH",
+      "exchange": "HKEX",
+      "listingDate": "2026-05-27",
+      "issuePrice": "20.81 HKD",
+      "currentPrice": null,
+      "sector": "半导体",
+      "tags": [
+        "OLED 驱动芯片",
+        "Micro OLED",
+        "Fabless",
+        "港股主板"
+      ],
+      "ceo": "待核实",
+      "summary": "云英谷科技专注 AMOLED 显示驱动芯片和 Micro OLED 硅基显示驱动背板芯片设计，采用 Fabless 模式。归类在半导体与显示芯片板块。",
+      "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=03310",
+      "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
+      "sourceName": "HKEX / 公司资料"
+    },
+    {
+      "id": "us-bwgc",
+      "market": "US",
+      "code": "BWGC",
+      "name": "BW Industrial Holdings Inc.",
+      "exchange": "NYSEAMERICAN",
+      "listingDate": "2026-05-27",
+      "issuePrice": "6.00-7.00 USD",
+      "currentPrice": null,
+      "sector": "工业工程",
+      "tags": [
+        "EPC",
+        "工业系统",
+        "工程建设",
+        "美股"
+      ],
+      "ceo": "Yunlong Zhang",
+      "summary": "BW Industrial 是美国工程、采购与施工公司，为多个工业领域的关键工艺系统提供设计、建设和集成服务。归类在工业工程与基础设施服务板块。",
+      "marketUrl": "https://stockanalysis.com/stocks/bwgc/",
+      "sourceUrl": "https://stockanalysis.com/stocks/bwgc/company/",
+      "sourceName": "StockAnalysis Company Profile"
+    },
+    {
+      "id": "us-riku",
+      "market": "US",
+      "code": "RIKU",
+      "name": "Riku Dining Group Limited",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-05-27",
+      "issuePrice": "4.00-6.00 USD",
+      "currentPrice": null,
+      "sector": "餐饮连锁",
+      "tags": [
+        "日本餐饮",
+        "加盟运营",
+        "加拿大",
+        "香港"
+      ],
+      "ceo": "Johnny Luk Ching Po",
+      "summary": "Riku Dining Group 经营和特许经营日本主题餐饮品牌，覆盖加拿大与香港市场，包括 Ajisen Ramen、Yakiniku Kakura 等。归类在可选消费与餐饮服务板块。",
+      "marketUrl": "https://stockanalysis.com/stocks/riku/",
+      "sourceUrl": "https://stockanalysis.com/stocks/riku/company/",
+      "sourceName": "StockAnalysis Company Profile"
+    },
+    {
+      "id": "h-06872",
+      "market": "H",
+      "code": "06872",
+      "name": "TENNOR THERAP-B",
+      "exchange": "HKEX",
+      "listingDate": "2026-05-22",
+      "issuePrice": "75.70 HKD",
+      "currentPrice": null,
+      "sector": "生物医药",
+      "tags": [
+        "感染性疾病",
+        "创新药",
+        "18A",
+        "港股历史"
+      ],
+      "ceo": "待核实",
+      "summary": "Tennor Therapeutics 是临床阶段生物医药公司，聚焦感染性疾病领域未满足医疗需求的差异化药物研发。归类在医疗保健与生物科技板块。",
+      "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=06872",
+      "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
+      "sourceName": "HKEX Newly Listed Securities"
+    },
+    {
+      "id": "h-01511",
+      "market": "H",
+      "code": "01511",
+      "name": "UISEE TECH",
+      "exchange": "HKEX",
+      "listingDate": "2026-05-20",
+      "issuePrice": "待核实",
+      "currentPrice": null,
+      "sector": "自动驾驶",
+      "tags": [
+        "无人驾驶",
+        "物流场景",
+        "港股历史"
+      ],
+      "ceo": "待核实",
+      "summary": "UISEE TECH 以自动驾驶技术和商业化场景落地为核心，业务方向覆盖物流、园区和交通等无人驾驶应用。归类在自动驾驶与人工智能应用板块。",
+      "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=01511",
+      "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
+      "sourceName": "HKEX Newly Listed Securities"
+    },
+    {
+      "id": "h-07688",
+      "market": "H",
+      "code": "07688",
+      "name": "TOPNC",
+      "exchange": "HKEX",
+      "listingDate": "2026-05-20",
+      "issuePrice": "26.39 HKD",
+      "currentPrice": null,
+      "sector": "数控设备",
+      "tags": [
+        "数控系统",
+        "智能制造",
+        "港股历史"
+      ],
+      "ceo": "待核实",
+      "summary": "拓璞数控与工业数控、智能制造设备相关，面向先进制造场景提供产品和服务。归类在高端装备与工业自动化板块。",
+      "marketUrl": "https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=07688",
+      "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
+      "sourceName": "HKEX / 东方财富港股 IPO"
+    },
+    {
+      "id": "us-cnxu",
+      "market": "US",
+      "code": "CNXU",
+      "name": "Conexeu Sciences Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-05-21",
+      "issuePrice": "13.50 USD",
+      "currentPrice": "13.07 USD",
+      "sector": "再生医学",
+      "tags": [
+        "医疗科技",
+        "组织修复",
+        "NASDAQ",
+        "美股历史"
+      ],
+      "ceo": "Miles Harrison",
+      "summary": "Conexeu Sciences 是再生组织平台公司，围绕可吸收支架和组织修复技术推进医疗应用。归类在医疗科技与生物材料板块。",
+      "marketUrl": "https://finance.yahoo.com/quote/CNXU",
+      "sourceUrl": "https://stockanalysis.com/ipos/2026/",
+      "sourceName": "StockAnalysis 2026 IPOs"
+    },
+    {
+      "id": "us-lcln",
+      "market": "US",
+      "code": "LCLN",
+      "name": "Lincoln International, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-05-20",
+      "issuePrice": "20.00 USD",
+      "currentPrice": "23.05 USD",
+      "sector": "金融服务",
+      "tags": [
+        "投行顾问",
+        "资本市场",
+        "NASDAQ",
+        "美股历史"
+      ],
+      "ceo": "待核实",
+      "summary": "Lincoln International 是金融服务公司，业务围绕资本市场、并购和企业融资顾问服务。归类在金融服务与投资银行板块。",
+      "marketUrl": "https://finance.yahoo.com/quote/LCLN",
+      "sourceUrl": "https://stockanalysis.com/ipos/2026/",
+      "sourceName": "StockAnalysis 2026 IPOs"
+    }
+  ]
+}
