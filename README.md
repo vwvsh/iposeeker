@@ -20,7 +20,22 @@ python -m http.server 4173
 
 ## 数据更新
 
-前端默认读取 `data/ipo-feed.json`，并按自然日缓存。部署后可以用任意定时任务每天生成这个 JSON 文件，字段格式如下：
+前端默认读取 `data/ipo-feed.json`，并按自然日缓存。
+
+仓库包含 GitHub Actions 定时任务：
+
+- `.github/workflows/update-ipo-feed.yml`
+- `scripts/update_ipo_feed.py`
+- `data/manual-ipo-overrides.json`
+
+它会在每天 06:30（北京时间）自动运行，更新 `data/ipo-feed.json` 并提交到仓库。也可以在 GitHub 仓库的 `Actions` 页面手动运行 `Update IPO Feed`。
+
+当前自动同步逻辑：
+
+- 美股：自动读取 StockAnalysis IPO Calendar，并补充公司页 CEO、行业和简介。
+- 港股/A股：暂由 `data/manual-ipo-overrides.json` 补充，避免未验证来源自动生成错误行情。
+
+字段格式如下：
 
 ```json
 {
@@ -43,10 +58,8 @@ python -m http.server 4173
 }
 ```
 
-推荐后续接入：
+推荐后续增强：
 
 - A 股：上交所、深交所、北交所新股日历，或券商/财经数据 API。
 - H 股：HKEX 新股/FINI 相关数据，或港股行情数据 API。
 - 美股：Nasdaq IPO Calendar、NYSE IPO Center、SEC filings，或聚合行情 API。
-
-当前仓库里的样例数据用于演示界面和交互，不代表真实行情。
