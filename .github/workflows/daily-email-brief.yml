@@ -3,7 +3,7 @@ name: Daily Email Brief
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "13 1 * * *"
 
 jobs:
   send-brief:
