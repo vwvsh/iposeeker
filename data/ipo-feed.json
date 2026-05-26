@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-25T23:40:01+00:00",
+  "updatedAt": "2026-05-26T23:41:06+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -177,6 +177,111 @@
       "summary": "Riku Dining Group is a dynamic and growing international restaurant operator with a diverse portfolio of Japanese-themed dining concepts across Canada and Hong Kong. Through our Operating Subsidiaries, we deliver authentic Japanese culinary experiences by hold",
       "marketUrl": "https://stockanalysis.com/stocks/riku/",
       "sourceUrl": "https://stockanalysis.com/stocks/riku/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-aadx",
+      "market": "US",
+      "code": "AADX",
+      "name": "Applied Aerospace & Defense, Inc.",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-03",
+      "issuePrice": "18.00 - 21.00 USD",
+      "currentPrice": null,
+      "sector": "Industrials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "James William Ferguson, III",
+      "summary": "Applied Aerospace & Defense is a premier provider of advanced design, engineering, and vertically integrated manufacturing solutions for leading and next-generation space and defense technology companies. We build complex, mission-critical subsystems for extre",
+      "marketUrl": "https://stockanalysis.com/stocks/aadx/",
+      "sourceUrl": "https://stockanalysis.com/stocks/aadx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-inio",
+      "market": "US",
+      "code": "INIO",
+      "name": "INNIO N.V.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-04",
+      "issuePrice": "24.00 - 27.00 USD",
+      "currentPrice": null,
+      "sector": "Industrials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Dr. Olaf Berlien",
+      "summary": "INNIO is a leading global distributed energy solutions provider that delivers reliable, flexible, transient, decentralized, modular and efficient power. Our reciprocating gas engines convert gaseous fuels, such as natural, renewable and specialty gases, into e",
+      "marketUrl": "https://stockanalysis.com/stocks/inio/",
+      "sourceUrl": "https://stockanalysis.com/stocks/inio/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-qnt",
+      "market": "US",
+      "code": "QNT",
+      "name": "Quantinuum Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-04",
+      "issuePrice": "45.00 - 50.00 USD",
+      "currentPrice": null,
+      "sector": "Technology",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Dr. Rajeeb Hazra",
+      "summary": "Quantinuum is a leading quantum computing platform that offers solutions like hardware platforms, developer tools, application libraries and solution-targeted intellectual property. Our vertically integrated quantum computing platform combines sophisticated qu",
+      "marketUrl": "https://stockanalysis.com/stocks/qnt/",
+      "sourceUrl": "https://stockanalysis.com/stocks/qnt/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-sfpt",
+      "market": "US",
+      "code": "SFPT",
+      "name": "Safepoint Holdings, Inc.",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-04",
+      "issuePrice": "15.00 - 17.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "David M. Flitman",
+      "summary": "Safepoint is a specialty homeowners and commercial insurance underwriter that manages all aspects of the insurance value chain in a capital efficient manner by leveraging a majority fee-based servicing platform. Safepoint is focused on delivering insurance in ",
+      "marketUrl": "https://stockanalysis.com/stocks/sfpt/",
+      "sourceUrl": "https://stockanalysis.com/stocks/sfpt/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-ssmr",
+      "market": "US",
+      "code": "SSMR",
+      "name": "Sunshine Silver Mining & Refining Company",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-04",
+      "issuePrice": "13.50 - 16.50 USD",
+      "currentPrice": null,
+      "sector": "Materials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Heather White",
+      "summary": "Sunshine Silver Mining & Refining is the owner and developer of the permitted Sunshine mine and permitted silver/copper refinery located one mile north of the Sunshine Mine, as well as the associated facilities including a tailings storage facility and histori",
+      "marketUrl": "https://stockanalysis.com/stocks/ssmr/",
+      "sourceUrl": "https://stockanalysis.com/stocks/ssmr/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
