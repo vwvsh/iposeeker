@@ -68,10 +68,9 @@ function symbolForSearch(stock) {
 }
 
 function setMarketLink(link, stock) {
-  const query = encodeURIComponent(symbolForSearch(stock));
-  link.href = `https://www.tradingview.com/symbol-search/?query=${query}`;
-  link.textContent = "全球搜索";
-  link.setAttribute("aria-label", `在 TradingView 搜索 ${stock.name}`);
+  link.href = "https://www.tradingview.com/";
+  link.textContent = "打开搜索网站";
+  link.setAttribute("aria-label", "打开 TradingView 后粘贴股票代码搜索");
   link.classList.remove("is-disabled");
 }
 
@@ -170,7 +169,7 @@ function renderCard(stock) {
   fragment.querySelector("h3").textContent = stock.nameZh || stock.name;
   fragment.querySelector(".code-line").textContent = `${stock.code} · ${stock.exchange}`;
   fragment.querySelector(".summary").textContent = stock.summary;
-  fragment.querySelector(".ceo-name").textContent = stock.ceo || "查看来源";
+  fragment.querySelector(".ceo-name").textContent = stock.ceo || "待补充";
   fragment.querySelector(".issue-price").textContent = stock.issuePrice || "--";
   fragment.querySelector(".listing-date").textContent = formatDate(stock.listingDate);
   fragment.querySelector(".current-price").textContent =
@@ -219,7 +218,7 @@ function renderCard(stock) {
   const sourceLink = fragment.querySelector(".source-link");
   if (stock.sourceUrl) {
     sourceLink.href = stock.sourceUrl;
-    sourceLink.textContent = `来源：${stock.sourceName || "公开资料"}`;
+    sourceLink.textContent = `查看资料来源：${stock.sourceName || "公开资料"}`;
   } else {
     sourceLink.removeAttribute("href");
     sourceLink.textContent = "来源：待核实";

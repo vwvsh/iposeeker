@@ -119,7 +119,7 @@ def parse_calendar(html: str) -> list[dict[str, str]]:
     return items
 
 
-def company_profile(details_url: str) -> dict[str, str]:
+def company_profile(details_url: str, *, name: str = "", code: str = "") -> dict[str, str]:
     url = details_url.rstrip("/") + "/company/"
     try:
         html = fetch(url)
@@ -153,16 +153,20 @@ def company_profile(details_url: str) -> dict[str, str]:
     if not description:
         description = "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"
 
-    summary = us_summary_zh(description, sector=sector, industry=industry)
+    summary = us_summary_zh(description, sector=sector, industry=industry, name=name, code=code)
     return {"ceo": ceo, "industry": industry, "sector": sector, "summary": summary, "sourceUrl": url}
 
 
-def us_summary_zh(description: str, *, sector: str, industry: str) -> str:
+def us_summary_zh(description: str, *, sector: str, industry: str, name: str, code: str) -> str:
     text = " ".join(description.split())
     lower = text.lower()
 
     if not text:
         return "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"
+
+    if "blank check" in lower or "acquisition corporation" in lower or "special purpose acquisition" in lower:
+        label = f"{name}（{code}）" if name and code else "该公司"
+        return f"{label}是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。"
 
     if "bw industrial" in lower or "engineering, procurement, and construction" in lower:
         return "BW Industrial 是一家工程、采购与施工服务公司，面向工业客户提供关键工艺系统的设计、建设和集成服务。归类在工业工程与基础设施服务板块。"
@@ -194,7 +198,7 @@ def build_us_items() -> list[dict[str, Any]]:
     output: list[dict[str, Any]] = []
 
     for row in calendar_items:
-        profile = company_profile(row["detailsUrl"])
+        profile = company_profile(row["detailsUrl"], name=row["name"], code=row["code"])
         sector = profile.get("sector") or profile.get("industry") or "美股 IPO"
         output.append(
             {
@@ -210,7 +214,7 @@ def build_us_items() -> list[dict[str, Any]]:
                 "tags": [profile.get("industry", "IPO"), row["exchange"], "美股"],
                 "ceo": profile.get("ceo", "待核实"),
                 "summary": profile.get("summary", "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"),
-                "marketUrl": f"https://www.tradingview.com/symbol-search/?query={row['code']}",
+                "marketUrl": "https://www.tradingview.com/",
                 "searchCode": row["code"],
                 "sourceUrl": profile.get("sourceUrl", row["detailsUrl"]),
                 "sourceName": "StockAnalysis IPO Calendar"
@@ -241,8 +245,20 @@ def a_share_exchange(code: str) -> str:
     return "A股"
 
 
+def eastmoney_symbol(code: str) -> str:
+    if code.startswith(("6", "688", "689")):
+        return f"SH{code}"
+    if code.startswith(("8", "4", "920")):
+        return f"BJ{code}"
+    return f"SZ{code}"
+
+
+def a_share_f10_url(code: str) -> str:
+    return f"https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code={eastmoney_symbol(code)}&type=web"
+
+
 def a_share_market_url(code: str) -> str:
-    return f"https://www.tradingview.com/symbol-search/?query={a_share_search_code(code).replace(':', '%3A')}"
+    return "https://www.tradingview.com/"
 
 
 def a_share_search_code(code: str) -> str:
@@ -251,6 +267,26 @@ def a_share_search_code(code: str) -> str:
     if code.startswith(("8", "4", "920")):
         return f"BSE:{code}"
     return f"SZSE:{code}"
+
+
+def fetch_a_share_leader(code: str) -> str:
+    try:
+        html = fetch(a_share_f10_url(code))
+    except Exception:
+        return "待补充"
+
+    parser = TextParser()
+    parser.feed(html)
+    lines = [line.strip() for line in parser.text.splitlines() if line.strip()]
+    joined = "\n".join(lines)
+
+    for title in ("董事长", "总经理"):
+        pattern = rf"([\u4e00-\u9fa5·]{2,6})\s+[^\n]{{0,40}}{title}"
+        match = re.search(pattern, joined)
+        if match:
+            return f"{title}：{match.group(1)}"
+
+    return "待补充"
 
 
 def build_a_items() -> list[dict[str, Any]]:
@@ -299,12 +335,12 @@ def build_a_items() -> list[dict[str, Any]]:
                 "currentPrice": f"{current_price} CNY" if current_price else None,
                 "sector": sector,
                 "tags": [exchange, "A股", "东方财富新股"],
-                "ceo": "查看来源",
+                "ceo": fetch_a_share_leader(code),
                 "summary": f"{name}为东方财富新股数据中的 A 股 IPO 标的，上市日期为{listing_date.isoformat()}，发行价为{issue_price or '待核实'}元。具体主营业务和管理层请查看来源页及公司公告。",
                 "marketUrl": a_share_market_url(code),
                 "searchCode": a_share_search_code(code),
-                "sourceUrl": "https://data.eastmoney.com/xg/?iswww=www",
-                "sourceName": "东方财富新股数据"
+                "sourceUrl": a_share_f10_url(code),
+                "sourceName": "东方财富F10 / 新股数据"
             }
         )
 
@@ -320,8 +356,10 @@ def merge_items(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 if code:
                     item["searchCode"] = a_share_search_code(code)
                     item["marketUrl"] = a_share_market_url(code)
+                    item["sourceUrl"] = a_share_f10_url(code)
+                    item["sourceName"] = "东方财富F10 / 新股数据"
                 if "待核实" in str(item.get("ceo", "")):
-                    item["ceo"] = "查看来源"
+                    item["ceo"] = fetch_a_share_leader(code) if code else "待补充"
             merged[item["id"]] = item
     return sorted(merged.values(), key=lambda item: (item["listingDate"], item["market"], item["code"]))
 
