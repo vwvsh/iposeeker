@@ -1,6 +1,6 @@
 const DATA_URL = "./data/ipo-feed.json";
 const FAVORITES_KEY = "ipo-radar:favorites";
-const CACHE_KEY = "ipo-radar:feed-cache:v7";
+const CACHE_KEY = "ipo-radar:feed-cache:v8";
 const LAST_CHECK_KEY = "ipo-radar:last-check";
 
 const fallbackFeed = {
@@ -57,44 +57,39 @@ function marketLabel(market) {
   return { A: "A 股", H: "H 股", US: "美股" }[market] || market;
 }
 
-function defaultMarketUrl(stock) {
-  if (stock.market === "US") return `https://finance.yahoo.com/quote/${stock.code}`;
-  if (stock.market === "H") {
-    return `https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol=${stock.code}`;
-  }
-  const prefix = stock.exchange.includes("沪") || stock.exchange.includes("科创") ? "sh" : "sz";
-  return `https://quote.eastmoney.com/${prefix}${stock.code}.html`;
+function symbolForSearch(stock) {
+  if (stock.searchCode) return stock.searchCode;
+  if (stock.market === "US") return stock.code;
+  if (stock.market === "H") return `HKEX:${stock.code}`;
+  if (stock.exchange.includes("上交所") || stock.exchange.includes("科创")) return `SSE:${stock.code}`;
+  if (stock.exchange.includes("深交所") || stock.exchange.includes("创业")) return `SZSE:${stock.code}`;
+  if (stock.exchange.includes("北交所")) return `BSE:${stock.code}`;
+  return stock.code;
 }
 
 function setMarketLink(link, stock) {
-  if (stock.marketUrl) {
-    link.href = stock.marketUrl;
-    link.textContent = isListed(stock) ? "查看实时行情" : "IPO 详情页";
-    link.setAttribute(
-      "aria-label",
-      isListed(stock) ? `查看 ${stock.name} 的实时行情` : `查看 ${stock.name} 的 IPO 详情页`
-    );
-    link.classList.remove("is-disabled");
+  const query = encodeURIComponent(symbolForSearch(stock));
+  link.href = `https://www.tradingview.com/symbol-search/?query=${query}`;
+  link.textContent = "全球搜索";
+  link.setAttribute("aria-label", `在 TradingView 搜索 ${stock.name}`);
+  link.classList.remove("is-disabled");
+}
+
+async function copyText(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
     return;
   }
 
-  if (!stock.isDemo) {
-    link.href = defaultMarketUrl(stock);
-    link.textContent = isListed(stock) ? "查看实时行情" : "IPO 详情页";
-    link.setAttribute(
-      "aria-label",
-      isListed(stock) ? `查看 ${stock.name} 的实时行情` : `查看 ${stock.name} 的 IPO 详情页`
-    );
-    link.classList.remove("is-disabled");
-    return;
-  }
-
-  link.removeAttribute("href");
-  link.removeAttribute("target");
-  link.removeAttribute("rel");
-  link.textContent = "演示数据暂无行情";
-  link.setAttribute("aria-label", `${stock.name} 是演示数据，暂无实时行情链接`);
-  link.classList.add("is-disabled");
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.append(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
 }
 
 function formatDate(dateValue) {
@@ -172,10 +167,10 @@ function renderCard(stock) {
   badge.textContent = marketLabel(stock.market);
   badge.classList.toggle("market-h", stock.market === "H");
   badge.classList.toggle("market-us", stock.market === "US");
-  fragment.querySelector("h3").textContent = stock.name;
+  fragment.querySelector("h3").textContent = stock.nameZh || stock.name;
   fragment.querySelector(".code-line").textContent = `${stock.code} · ${stock.exchange}`;
   fragment.querySelector(".summary").textContent = stock.summary;
-  fragment.querySelector(".ceo-name").textContent = stock.ceo || "待披露";
+  fragment.querySelector(".ceo-name").textContent = stock.ceo || "查看来源";
   fragment.querySelector(".issue-price").textContent = stock.issuePrice || "--";
   fragment.querySelector(".listing-date").textContent = formatDate(stock.listingDate);
   fragment.querySelector(".current-price").textContent =
@@ -209,6 +204,17 @@ function renderCard(stock) {
 
   const marketLink = fragment.querySelector(".market-link");
   setMarketLink(marketLink, stock);
+
+  const copyButton = fragment.querySelector(".copy-code-button");
+  const queryCode = symbolForSearch(stock);
+  copyButton.textContent = `复制 ${queryCode}`;
+  copyButton.addEventListener("click", async () => {
+    await copyText(queryCode);
+    copyButton.textContent = "已复制";
+    setTimeout(() => {
+      copyButton.textContent = `复制 ${queryCode}`;
+    }, 1400);
+  });
 
   const sourceLink = fragment.querySelector(".source-link");
   if (stock.sourceUrl) {

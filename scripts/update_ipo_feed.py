@@ -210,7 +210,8 @@ def build_us_items() -> list[dict[str, Any]]:
                 "tags": [profile.get("industry", "IPO"), row["exchange"], "美股"],
                 "ceo": profile.get("ceo", "待核实"),
                 "summary": profile.get("summary", "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"),
-                "marketUrl": row["detailsUrl"],
+                "marketUrl": f"https://www.tradingview.com/symbol-search/?query={row['code']}",
+                "searchCode": row["code"],
                 "sourceUrl": profile.get("sourceUrl", row["detailsUrl"]),
                 "sourceName": "StockAnalysis IPO Calendar"
             }
@@ -241,11 +242,15 @@ def a_share_exchange(code: str) -> str:
 
 
 def a_share_market_url(code: str) -> str:
+    return f"https://www.tradingview.com/symbol-search/?query={a_share_search_code(code).replace(':', '%3A')}"
+
+
+def a_share_search_code(code: str) -> str:
     if code.startswith(("6", "688", "689")):
-        return f"https://quote.eastmoney.com/sh{code}.html"
+        return f"SSE:{code}"
     if code.startswith(("8", "4", "920")):
-        return f"https://quote.eastmoney.com/bj{code}.html"
-    return f"https://quote.eastmoney.com/sz{code}.html"
+        return f"BSE:{code}"
+    return f"SZSE:{code}"
 
 
 def build_a_items() -> list[dict[str, Any]]:
@@ -294,9 +299,10 @@ def build_a_items() -> list[dict[str, Any]]:
                 "currentPrice": f"{current_price} CNY" if current_price else None,
                 "sector": sector,
                 "tags": [exchange, "A股", "东方财富新股"],
-                "ceo": "主要管理层：待核实",
+                "ceo": "查看来源",
                 "summary": f"{name}为东方财富新股数据中的 A 股 IPO 标的，上市日期为{listing_date.isoformat()}，发行价为{issue_price or '待核实'}元。具体主营业务和管理层请查看来源页及公司公告。",
                 "marketUrl": a_share_market_url(code),
+                "searchCode": a_share_search_code(code),
                 "sourceUrl": "https://data.eastmoney.com/xg/?iswww=www",
                 "sourceName": "东方财富新股数据"
             }
@@ -309,6 +315,13 @@ def merge_items(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged: dict[str, dict[str, Any]] = {}
     for group in groups:
         for item in group:
+            if item.get("market") == "A":
+                code = str(item.get("code", ""))
+                if code:
+                    item["searchCode"] = a_share_search_code(code)
+                    item["marketUrl"] = a_share_market_url(code)
+                if "待核实" in str(item.get("ceo", "")):
+                    item["ceo"] = "查看来源"
             merged[item["id"]] = item
     return sorted(merged.values(), key=lambda item: (item["listingDate"], item["market"], item["code"]))
 
