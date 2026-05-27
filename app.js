@@ -60,17 +60,17 @@ function marketLabel(market) {
 function symbolForSearch(stock) {
   if (stock.searchCode) return stock.searchCode;
   if (stock.market === "US") return stock.code;
-  if (stock.market === "H") return `HKEX:${stock.code}`;
-  if (stock.exchange.includes("上交所") || stock.exchange.includes("科创")) return `SSE:${stock.code}`;
-  if (stock.exchange.includes("深交所") || stock.exchange.includes("创业")) return `SZSE:${stock.code}`;
-  if (stock.exchange.includes("北交所")) return `BSE:${stock.code}`;
+  if (stock.market === "H") return `${stock.code}:HKG`;
+  if (stock.exchange.includes("上交所") || stock.exchange.includes("科创")) return `${stock.code}:SHA`;
+  if (stock.exchange.includes("深交所") || stock.exchange.includes("创业")) return `${stock.code}:SHE`;
+  if (stock.exchange.includes("北交所")) return `${stock.code}:BJS`;
   return stock.code;
 }
 
 function setMarketLink(link, stock) {
-  link.href = "https://www.tradingview.com/";
-  link.textContent = "打开搜索网站";
-  link.setAttribute("aria-label", "打开 TradingView 后粘贴股票代码搜索");
+  link.href = "https://www.google.com/finance/";
+  link.textContent = "打开 Google 财经";
+  link.setAttribute("aria-label", "打开 Google 财经后粘贴股票代码搜索");
   link.classList.remove("is-disabled");
 }
 

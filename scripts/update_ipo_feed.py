@@ -214,7 +214,7 @@ def build_us_items() -> list[dict[str, Any]]:
                 "tags": [profile.get("industry", "IPO"), row["exchange"], "美股"],
                 "ceo": profile.get("ceo", "待核实"),
                 "summary": profile.get("summary", "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"),
-                "marketUrl": "https://www.tradingview.com/",
+                "marketUrl": "https://www.google.com/finance/",
                 "searchCode": row["code"],
                 "sourceUrl": profile.get("sourceUrl", row["detailsUrl"]),
                 "sourceName": "StockAnalysis IPO Calendar"
@@ -258,15 +258,62 @@ def a_share_f10_url(code: str) -> str:
 
 
 def a_share_market_url(code: str) -> str:
-    return "https://www.tradingview.com/"
+    return "https://www.google.com/finance/"
 
 
 def a_share_search_code(code: str) -> str:
     if code.startswith(("6", "688", "689")):
-        return f"SSE:{code}"
+        return f"{code}:SHA"
     if code.startswith(("8", "4", "920")):
-        return f"BSE:{code}"
-    return f"SZSE:{code}"
+        return f"{code}:BJS"
+    return f"{code}:SHE"
+
+
+def first_value_by_label(records: list[dict[str, Any]], labels: tuple[str, ...]) -> str:
+    for record in records:
+        items = [(str(key).strip(), str(value).strip()) for key, value in record.items()]
+        for key, value in items:
+            if not value or value.lower() in {"nan", "none", "--"}:
+                continue
+            if any(label in key for label in labels):
+                return value
+            if any(label == value for label in labels):
+                for _, other_value in items:
+                    if other_value and other_value != value and other_value.lower() not in {"nan", "none", "--"}:
+                        return other_value
+    return ""
+
+
+def concise_business_text(text: str, limit: int = 88) -> str:
+    cleaned = re.sub(r"\s+", "", text)
+    if len(cleaned) <= limit:
+        return cleaned
+    return cleaned[:limit].rstrip("，。、；;") + "等"
+
+
+def fetch_a_share_business_summary(code: str, name: str, sector: str) -> str:
+    try:
+        import akshare as ak  # type: ignore
+
+        df = ak.stock_zyjs_ths(symbol=code)
+        records = df.to_dict(orient="records")
+    except Exception:
+        records = []
+
+    business = first_value_by_label(records, ("主营业务", "主营介绍", "经营范围"))
+    product_type = first_value_by_label(records, ("产品类型", "业务类型"))
+    product_name = first_value_by_label(records, ("产品名称", "主要产品"))
+
+    if business:
+        summary = f"{name}主要从事{concise_business_text(business)}。"
+        if product_type and product_type not in business:
+            summary += f"主要产品或服务类型包括{concise_business_text(product_type, 44)}。"
+        elif product_name and product_name not in business:
+            summary += f"主要产品包括{concise_business_text(product_name, 44)}。"
+        summary += f"归类在{sector}板块。"
+        return summary
+
+    return f"{name}为 A 股 IPO 标的，具体主营业务、产品结构和管理层信息请查看 F10 资料及公司公告。归类在{sector}板块。"
 
 
 def fetch_a_share_leader(code: str) -> str:
@@ -336,7 +383,7 @@ def build_a_items() -> list[dict[str, Any]]:
                 "sector": sector,
                 "tags": [exchange, "A股", "东方财富新股"],
                 "ceo": fetch_a_share_leader(code),
-                "summary": f"{name}为东方财富新股数据中的 A 股 IPO 标的，上市日期为{listing_date.isoformat()}，发行价为{issue_price or '待核实'}元。具体主营业务和管理层请查看来源页及公司公告。",
+                "summary": fetch_a_share_business_summary(code, name, sector),
                 "marketUrl": a_share_market_url(code),
                 "searchCode": a_share_search_code(code),
                 "sourceUrl": a_share_f10_url(code),
@@ -351,8 +398,15 @@ def merge_items(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged: dict[str, dict[str, Any]] = {}
     for group in groups:
         for item in group:
-            if item.get("market") == "A":
-                code = str(item.get("code", ""))
+            market = item.get("market")
+            code = str(item.get("code", ""))
+            if market in {"A", "H", "US"}:
+                item["marketUrl"] = "https://www.google.com/finance/"
+            if market == "US" and code:
+                item["searchCode"] = code
+            if market == "H" and code:
+                item["searchCode"] = item.get("searchCode") or f"{code}:HKG"
+            if market == "A":
                 if code:
                     item["searchCode"] = a_share_search_code(code)
                     item["marketUrl"] = a_share_market_url(code)
