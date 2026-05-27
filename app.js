@@ -1,6 +1,6 @@
 const DATA_URL = "./data/ipo-feed.json";
 const FAVORITES_KEY = "ipo-radar:favorites";
-const CACHE_KEY = "ipo-radar:feed-cache:v8";
+const CACHE_KEY = "ipo-radar:feed-cache:v9";
 const LAST_CHECK_KEY = "ipo-radar:last-check";
 
 const fallbackFeed = {
@@ -46,11 +46,11 @@ function daysFromToday(dateValue) {
 
 function isUpcomingSoon(stock) {
   const days = daysFromToday(stock.listingDate);
-  return days >= 0 && days <= 3;
+  return days > 0 && days <= 3;
 }
 
 function isListed(stock) {
-  return daysFromToday(stock.listingDate) < 0;
+  return daysFromToday(stock.listingDate) <= 0;
 }
 
 function marketLabel(market) {
@@ -173,7 +173,7 @@ function renderCard(stock) {
   fragment.querySelector(".issue-price").textContent = stock.issuePrice || "--";
   fragment.querySelector(".listing-date").textContent = formatDate(stock.listingDate);
   fragment.querySelector(".current-price").textContent =
-    stock.currentPrice || (isListed(stock) ? "待核实" : "待上市");
+    stock.currentPrice || (isListed(stock) ? "待更新" : "待上市");
 
   const tags = fragment.querySelector(".tags");
   [stock.sector, ...(stock.tags || [])].forEach((tag) => {
