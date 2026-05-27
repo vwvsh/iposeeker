@@ -42,8 +42,9 @@ python -m http.server 4173
 
 当前自动同步逻辑：
 
+- A 股：自动读取东方财富新股数据，获取代码、简称、发行价、最新价和上市日期。
 - 美股：自动读取 StockAnalysis IPO Calendar，并补充公司页 CEO、行业和简介。
-- 港股/A股：暂由 `data/manual-ipo-overrides.json` 补充，避免未验证来源自动生成错误行情。
+- 港股：暂由 `data/manual-ipo-overrides.json` 补充，避免未验证来源自动生成错误行情。
 
 字段格式如下：
 

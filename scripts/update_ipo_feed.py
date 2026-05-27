@@ -9,11 +9,13 @@ from pathlib import Path
 from typing import Any
 from urllib.error import URLError
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 FEED_PATH = ROOT / "data" / "ipo-feed.json"
 MANUAL_PATH = ROOT / "data" / "manual-ipo-overrides.json"
 CALENDAR_URL = "https://stockanalysis.com/ipos/calendar/"
+CN_TZ = ZoneInfo("Asia/Shanghai")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; IPOSeekerBot/1.0; +https://github.com/vwvsh/iposeeker)"
@@ -151,8 +153,39 @@ def company_profile(details_url: str) -> dict[str, str]:
     if not description:
         description = "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"
 
-    summary = " ".join(description.split())[:260]
+    summary = us_summary_zh(description, sector=sector, industry=industry)
     return {"ceo": ceo, "industry": industry, "sector": sector, "summary": summary, "sourceUrl": url}
+
+
+def us_summary_zh(description: str, *, sector: str, industry: str) -> str:
+    text = " ".join(description.split())
+    lower = text.lower()
+
+    if not text:
+        return "该公司为美股 IPO 日历中的待上市公司，业务简介请查看来源页。"
+
+    if "bw industrial" in lower or "engineering, procurement, and construction" in lower:
+        return "BW Industrial 是一家工程、采购与施工服务公司，面向工业客户提供关键工艺系统的设计、建设和集成服务。归类在工业工程与基础设施服务板块。"
+
+    if "riku dining" in lower or "japanese" in lower and "restaurant" in lower:
+        return "Riku Dining Group 经营和授权日本主题餐饮品牌，业务覆盖加拿大和香港市场，收入来自门店运营与加盟体系。归类在可选消费与餐饮服务板块。"
+
+    if "conexeu" in lower or "regenerative" in lower or "tissue" in lower:
+        return "Conexeu Sciences 聚焦再生医学和组织修复技术，围绕可吸收支架及相关医疗应用推进产品开发。归类在医疗科技与生物材料板块。"
+
+    if "lincoln international" in lower or "investment banking" in lower:
+        return "Lincoln International 提供并购、资本市场和企业融资顾问服务，客户包括企业、私募基金和机构投资者。归类在金融服务与投资银行板块。"
+
+    if "software" in lower or "platform" in lower or "cloud" in lower:
+        return f"该公司主要提供软件平台或云端服务，业务说明来自美股 IPO 公司资料页。归类在{sector or industry or '软件服务'}板块。"
+
+    if "medical" in lower or "biotechnology" in lower or "pharmaceutical" in lower:
+        return f"该公司业务与医疗健康、生命科学或药物研发相关，具体产品线以公司披露资料为准。归类在{sector or industry or '医疗健康'}板块。"
+
+    if "financial" in lower or "bank" in lower or "capital" in lower:
+        return f"该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在{sector or industry or '金融服务'}板块。"
+
+    return f"该公司为美股 IPO 日历中的待上市公司，业务简介来自公司资料页；具体主营产品和收入结构建议查看来源链接。归类在{sector or industry or '美股 IPO'}板块。"
 
 
 def build_us_items() -> list[dict[str, Any]]:
@@ -186,6 +219,92 @@ def build_us_items() -> list[dict[str, Any]]:
     return output
 
 
+def normalize_float(value: Any) -> str | None:
+    text = "" if value is None else str(value).strip()
+    if not text or text.lower() in {"nan", "nat", "none", "--"}:
+        return None
+    return text
+
+
+def a_share_exchange(code: str) -> str:
+    if code.startswith("688") or code.startswith("689"):
+        return "上交所科创板"
+    if code.startswith("6"):
+        return "上交所主板"
+    if code.startswith("30"):
+        return "深交所创业板"
+    if code.startswith(("00", "001", "002")):
+        return "深交所主板"
+    if code.startswith(("8", "4", "920")):
+        return "北交所"
+    return "A股"
+
+
+def a_share_market_url(code: str) -> str:
+    if code.startswith(("6", "688", "689")):
+        return f"https://quote.eastmoney.com/sh{code}.html"
+    if code.startswith(("8", "4", "920")):
+        return f"https://quote.eastmoney.com/bj{code}.html"
+    return f"https://quote.eastmoney.com/sz{code}.html"
+
+
+def build_a_items() -> list[dict[str, Any]]:
+    import akshare as ak  # type: ignore
+
+    df = ak.stock_xgsglb_em(symbol="全部股票")
+    today = datetime.now(CN_TZ).date()
+    output: list[dict[str, Any]] = []
+
+    for row in df.to_dict(orient="records"):
+        code = str(row.get("股票代码", "")).zfill(6)
+        name = str(row.get("股票简称", "")).strip()
+        listing_raw = row.get("上市日期")
+        if not code or not name or listing_raw is None:
+            continue
+
+        try:
+            listing_date = datetime.fromisoformat(str(listing_raw)[:10]).date()
+        except ValueError:
+            continue
+
+        days = (listing_date - today).days
+        if days < -14 or days > 30:
+            continue
+
+        issue_price = normalize_float(row.get("发行价格"))
+        current_price = normalize_float(row.get("最新价"))
+        exchange = a_share_exchange(code)
+        sector = "A股新股"
+        if "科创板" in exchange:
+            sector = "科创板"
+        elif "创业板" in exchange:
+            sector = "创业板"
+        elif "北交所" in exchange:
+            sector = "北交所"
+
+        output.append(
+            {
+                "id": f"a-{code}",
+                "market": "A",
+                "code": code,
+                "name": name,
+                "exchange": exchange,
+                "listingDate": listing_date.isoformat(),
+                "issuePrice": f"{issue_price} CNY" if issue_price else "待核实",
+                "currentPrice": f"{current_price} CNY" if current_price else None,
+                "sector": sector,
+                "tags": [exchange, "A股", "东方财富新股"],
+                "ceo": "主要管理层：待核实",
+                "summary": f"{name}为东方财富新股数据中的 A 股 IPO 标的，上市日期为{listing_date.isoformat()}，发行价为{issue_price or '待核实'}元。具体主营业务和管理层请查看来源页及公司公告。",
+                "marketUrl": a_share_market_url(code),
+                "sourceUrl": "https://data.eastmoney.com/xg/?iswww=www",
+                "sourceName": "东方财富新股数据"
+            }
+        )
+
+    return output
+
+
 def merge_items(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged: dict[str, dict[str, Any]] = {}
     for group in groups:
@@ -203,12 +322,18 @@ def main() -> None:
     ]
 
     try:
+        a_items = build_a_items()
+    except Exception as exc:
+        a_items = [item for item in previous.get("items", []) if item.get("market") == "A"]
+        notes.append(f"A股自动同步失败，沿用上一版A股数据：{exc}")
+
+    try:
         us_items = build_us_items()
     except Exception as exc:
         us_items = [item for item in previous.get("items", []) if item.get("market") == "US"]
         notes.append(f"美股自动同步失败，沿用上一版美股数据：{exc}")
 
-    items = merge_items(manual.get("items", []), us_items)
+    items = merge_items(manual.get("items", []), a_items, us_items)
     feed = {
         "updatedAt": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "notes": notes + manual.get("notes", []),
