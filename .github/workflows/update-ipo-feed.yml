@@ -3,7 +3,7 @@ name: Update IPO Feed
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 22 * * *"
+    - cron: "55 0 * * *"
 
 permissions:
   contents: write
@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install data dependencies
+        run: python -m pip install --upgrade akshare
+
       - name: Generate IPO feed
         run: python scripts/update_ipo_feed.py
 
@@ -28,3 +31,10 @@ jobs:
         with:
           commit_message: "Update IPO feed"
           file_pattern: data/ipo-feed.json
+
+      - name: Send daily email brief
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: vikinginshanghai@qq.com
+        run: python scripts/send_daily_brief.py
