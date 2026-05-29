@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T05:08:22+00:00",
+  "updatedAt": "2026-05-29T05:09:12+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -15,7 +15,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "70.05 CNY",
+      "currentPrice": "68.57 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -37,7 +37,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "191.0 CNY",
+      "currentPrice": "185.03 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -59,7 +59,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "46.51 CNY",
+      "currentPrice": "46.11 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -81,7 +81,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "65.68 CNY",
+      "currentPrice": "64.61 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -149,7 +149,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "78.02 CNY",
+      "currentPrice": "74.58 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -171,7 +171,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "77.2 CNY",
+      "currentPrice": "80.4 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -193,7 +193,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "79.5 CNY",
+      "currentPrice": "79.81 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -239,7 +239,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "619.97 CNY",
+      "currentPrice": "718.02 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -247,7 +247,7 @@
         "东方财富新股"
       ],
       "ceo": "待补充",
-      "summary": "长进光子为 A 股 IPO 标的，具体主营业务、产品结构和管理层信息请查看 F10 资料及公司公告。归类在科创板板块。",
+      "summary": "长进光子主要从事高性能、多品类特种光纤的研发、生产和销售。。主要产品或服务类型包括掺稀土光纤、传能光纤、其他特种光纤及器件。归类在科创板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "688635:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688635&type=web",
@@ -261,7 +261,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "37.35 CNY",
+      "currentPrice": "46.78 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -348,12 +348,34 @@
       "sourceName": "HKEX / 公司资料"
     },
     {
-      "id": "us-idia",
+      "id": "a-920218",
+      "market": "A",
+      "code": "920218",
+      "name": "N新天力",
+      "exchange": "北交所",
+      "listingDate": "2026-05-29",
+      "issuePrice": "12.19 CNY",
+      "currentPrice": "57.95 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "待补充",
+      "summary": "N新天力主要从事食品容器的研发、生产和销售。。主要产品或服务类型包括塑料食品容器、纸制食品容器、其他产品。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920218:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920218&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
+      "id": "us-bid",
       "market": "US",
-      "code": "IDIA",
-      "name": "Innovative Digital Investors Acquisition Corp.",
+      "code": "BID",
+      "name": "Tribeca Strategic Acquisition Corp.",
       "exchange": "NASDAQ",
-      "listingDate": "2026-05-28",
+      "listingDate": "2026-05-29",
       "issuePrice": "10.00 USD",
       "currentPrice": null,
       "sector": "Financials",
@@ -362,34 +384,12 @@
         "NASDAQ",
         "美股"
       ],
-      "ceo": "Jonathan Bates",
-      "summary": "Innovative Digital Investors Acquisition Corp.（IDIA）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "ceo": "Timothy R. Ramdeen",
+      "summary": "Tribeca Strategic Acquisition Corp.（BID）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
       "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "IDIA",
-      "sourceUrl": "https://stockanalysis.com/stocks/idia/company/",
+      "searchCode": "BID",
+      "sourceUrl": "https://stockanalysis.com/stocks/bid/company/",
       "sourceName": "StockAnalysis IPO Calendar"
-    },
-    {
-      "id": "a-920218",
-      "market": "A",
-      "code": "920218",
-      "name": "新天力",
-      "exchange": "北交所",
-      "listingDate": "2026-05-29",
-      "issuePrice": "12.19 CNY",
-      "currentPrice": null,
-      "sector": "北交所",
-      "tags": [
-        "北交所",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "新天力主要从事食品容器的研发、生产和销售。。主要产品或服务类型包括塑料食品容器、纸制食品容器、其他产品。归类在北交所板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "920218:BJS",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920218&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
     },
     {
       "id": "us-fisn",
@@ -414,25 +414,25 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
-      "id": "us-riku",
+      "id": "us-idia",
       "market": "US",
-      "code": "RIKU",
-      "name": "Riku Dining Group Limited",
+      "code": "IDIA",
+      "name": "Innovative Digital Investors Acquisition Corp.",
       "exchange": "NASDAQ",
       "listingDate": "2026-05-29",
-      "issuePrice": "4.00 - 6.00 USD",
+      "issuePrice": "10.00 USD",
       "currentPrice": null,
-      "sector": "Consumer Discretionary",
+      "sector": "Financials",
       "tags": [
         "Stock Lists",
         "NASDAQ",
         "美股"
       ],
-      "ceo": "Mr. Johnny Luk Ching Po",
-      "summary": "Riku Dining Group 经营和授权日本主题餐饮品牌，业务覆盖加拿大和香港市场，收入来自门店运营与加盟体系。归类在可选消费与餐饮服务板块。",
+      "ceo": "Jonathan Bates",
+      "summary": "Innovative Digital Investors Acquisition Corp.（IDIA）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
       "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "RIKU",
-      "sourceUrl": "https://stockanalysis.com/stocks/riku/company/",
+      "searchCode": "IDIA",
+      "sourceUrl": "https://stockanalysis.com/stocks/idia/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
