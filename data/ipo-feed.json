@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-29T05:09:12+00:00",
+  "updatedAt": "2026-05-30T04:46:03+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -8,50 +8,6 @@
   ],
   "items": [
     {
-      "id": "a-001393",
-      "market": "A",
-      "code": "001393",
-      "name": "维通利",
-      "exchange": "深交所主板",
-      "listingDate": "2026-05-15",
-      "issuePrice": "30.38 CNY",
-      "currentPrice": "68.57 CNY",
-      "sector": "A股新股",
-      "tags": [
-        "深交所主板",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "维通利主要从事硬连接、柔性连接、触头组件、叠层母排和CCS等系列化电连接产品以及同步分解器等产品的研发、生产和销售。。主要产品或服务类型包括硬连接、柔性连接、触头组件、同步分解器、叠层母排和CCS。归类在A股新股板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "001393:SHE",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001393&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
-      "id": "a-920178",
-      "market": "A",
-      "code": "920178",
-      "name": "锐翔智能",
-      "exchange": "北交所",
-      "listingDate": "2026-05-15",
-      "issuePrice": "29.47 CNY",
-      "currentPrice": "185.03 CNY",
-      "sector": "北交所",
-      "tags": [
-        "北交所",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "锐翔智能主要从事智能制造装备的研发设计、生产和销售。。主要产品或服务类型包括智能制造装备销售、配件销售、智能制造装备租赁、技术服务、材料销售。归类在北交所板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "920178:BJS",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920178&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
       "id": "a-001365",
       "market": "A",
       "code": "001365",
@@ -59,7 +15,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "46.11 CNY",
+      "currentPrice": "45.09 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -81,7 +37,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "64.61 CNY",
+      "currentPrice": "64.15 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -149,7 +105,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "74.58 CNY",
+      "currentPrice": "70.74 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -193,7 +149,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "79.81 CNY",
+      "currentPrice": "75.96 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -239,7 +195,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "718.02 CNY",
+      "currentPrice": "720.5 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -261,7 +217,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "46.78 CNY",
+      "currentPrice": "45.8 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -351,11 +307,11 @@
       "id": "a-920218",
       "market": "A",
       "code": "920218",
-      "name": "N新天力",
+      "name": "新天力",
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "57.95 CNY",
+      "currentPrice": "45.2 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -363,77 +319,11 @@
         "东方财富新股"
       ],
       "ceo": "待补充",
-      "summary": "N新天力主要从事食品容器的研发、生产和销售。。主要产品或服务类型包括塑料食品容器、纸制食品容器、其他产品。归类在北交所板块。",
+      "summary": "新天力主要从事食品容器的研发、生产和销售。。主要产品或服务类型包括塑料食品容器、纸制食品容器、其他产品。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920218:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920218&type=web",
       "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
-      "id": "us-bid",
-      "market": "US",
-      "code": "BID",
-      "name": "Tribeca Strategic Acquisition Corp.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-05-29",
-      "issuePrice": "10.00 USD",
-      "currentPrice": null,
-      "sector": "Financials",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Timothy R. Ramdeen",
-      "summary": "Tribeca Strategic Acquisition Corp.（BID）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "BID",
-      "sourceUrl": "https://stockanalysis.com/stocks/bid/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
-    },
-    {
-      "id": "us-fisn",
-      "market": "US",
-      "code": "FISN",
-      "name": "Deep Fission, Inc.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-05-29",
-      "issuePrice": "24.00 - 26.00 USD",
-      "currentPrice": null,
-      "sector": "Energy",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Elizabeth Muller",
-      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Energy板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "FISN",
-      "sourceUrl": "https://stockanalysis.com/stocks/fisn/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
-    },
-    {
-      "id": "us-idia",
-      "market": "US",
-      "code": "IDIA",
-      "name": "Innovative Digital Investors Acquisition Corp.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-05-29",
-      "issuePrice": "10.00 USD",
-      "currentPrice": null,
-      "sector": "Financials",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Jonathan Bates",
-      "summary": "Innovative Digital Investors Acquisition Corp.（IDIA）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "IDIA",
-      "sourceUrl": "https://stockanalysis.com/stocks/idia/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-aadx",
@@ -455,6 +345,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "AADX",
       "sourceUrl": "https://stockanalysis.com/stocks/aadx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-aesp",
+      "market": "US",
+      "code": "AESP",
+      "name": "Aeon Acquisition I Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-03",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Demetrios Mallios",
+      "summary": "Aeon Acquisition I Corp.（AESP）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "AESP",
+      "sourceUrl": "https://stockanalysis.com/stocks/aesp/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
