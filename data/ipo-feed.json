@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-30T04:46:03+00:00",
+  "updatedAt": "2026-05-31T05:14:36+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
