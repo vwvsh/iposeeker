@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-31T05:14:36+00:00",
+  "updatedAt": "2026-06-01T05:55:49+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -15,7 +15,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "45.09 CNY",
+      "currentPrice": "46.71 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -37,7 +37,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "64.15 CNY",
+      "currentPrice": "58.96 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -105,7 +105,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "70.74 CNY",
+      "currentPrice": "72.24 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -127,7 +127,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "80.4 CNY",
+      "currentPrice": "82.72 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -149,7 +149,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "75.96 CNY",
+      "currentPrice": "73.37 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -195,7 +195,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "720.5 CNY",
+      "currentPrice": "628.99 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -217,7 +217,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "45.8 CNY",
+      "currentPrice": "39.39 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -311,7 +311,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "45.2 CNY",
+      "currentPrice": "35.66 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
