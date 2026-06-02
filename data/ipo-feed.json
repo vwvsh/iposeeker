@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01T05:55:49+00:00",
+  "updatedAt": "2026-06-02T05:26:10+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -7,50 +7,6 @@
     "后续可接入 HKEX、交易所公告或授权数据 API 后改为自动抓取。"
   ],
   "items": [
-    {
-      "id": "a-001365",
-      "market": "A",
-      "code": "001365",
-      "name": "天海电子",
-      "exchange": "深交所主板",
-      "listingDate": "2026-05-18",
-      "issuePrice": "27.19 CNY",
-      "currentPrice": "46.71 CNY",
-      "sector": "A股新股",
-      "tags": [
-        "深交所主板",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "天海电子主要从事汽车线束、汽车连接器、汽车电子等汽车零部件产品的研发、生产和销售。。主要产品或服务类型包括汽车线束、低压线束、高压线束、汽车连接器、汽车电子产品。归类在A股新股板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "001365:SHE",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001365&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
-      "id": "a-920096",
-      "market": "A",
-      "code": "920096",
-      "name": "嘉晨智能",
-      "exchange": "北交所",
-      "listingDate": "2026-05-18",
-      "issuePrice": "14.43 CNY",
-      "currentPrice": "58.96 CNY",
-      "sector": "北交所",
-      "tags": [
-        "北交所",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "嘉晨智能主要从事电气控制系统产品及整体解决方案的研发、生产和销售。。主要产品或服务类型包括电机驱动控制系统、整机控制系统、车联网产品及应用。归类在北交所板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "920096:BJS",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920096&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
     {
       "id": "h-01511",
       "market": "H",
@@ -105,7 +61,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "72.24 CNY",
+      "currentPrice": "72.92 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -127,7 +83,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "82.72 CNY",
+      "currentPrice": "76.82 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -149,7 +105,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "73.37 CNY",
+      "currentPrice": "71.73 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -195,7 +151,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "628.99 CNY",
+      "currentPrice": "621.3 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -217,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "39.39 CNY",
+      "currentPrice": "38.79 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -311,7 +267,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "35.66 CNY",
+      "currentPrice": "28.9 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -389,6 +345,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "INIO",
       "sourceUrl": "https://stockanalysis.com/stocks/inio/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-lfto",
+      "market": "US",
+      "code": "LFTO",
+      "name": "Liftoff Mobile, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-04",
+      "issuePrice": "20.00 - 22.00 USD",
+      "currentPrice": null,
+      "sector": "Technology",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Jeremy Bondy",
+      "summary": "该公司主要提供软件平台或云端服务，业务说明来自美股 IPO 公司资料页。归类在Technology板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "LFTO",
+      "sourceUrl": "https://stockanalysis.com/stocks/lfto/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
