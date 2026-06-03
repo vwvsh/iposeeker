@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-02T05:26:10+00:00",
+  "updatedAt": "2026-06-03T05:58:08+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -61,7 +61,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "72.92 CNY",
+      "currentPrice": "68.15 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -83,7 +83,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "76.82 CNY",
+      "currentPrice": "78.08 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -105,7 +105,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "71.73 CNY",
+      "currentPrice": "71.9 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -151,7 +151,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "621.3 CNY",
+      "currentPrice": "678.08 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -173,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "38.79 CNY",
+      "currentPrice": "46.22 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -267,7 +267,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "28.9 CNY",
+      "currentPrice": "28.83 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -326,6 +326,28 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-keyy",
+      "market": "US",
+      "code": "KEYY",
+      "name": "Keystone Acquisition Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-03",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Richard Chin",
+      "summary": "Keystone Acquisition Corp.（KEYY）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "KEYY",
+      "sourceUrl": "https://stockanalysis.com/stocks/keyy/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
       "id": "us-inio",
       "market": "US",
       "code": "INIO",
@@ -376,7 +398,7 @@
       "name": "Quantinuum Inc.",
       "exchange": "NASDAQ",
       "listingDate": "2026-06-04",
-      "issuePrice": "45.00 - 50.00 USD",
+      "issuePrice": "53.00 - 55.00 USD",
       "currentPrice": null,
       "sector": "Technology",
       "tags": [
@@ -455,6 +477,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "WHK",
       "sourceUrl": "https://stockanalysis.com/stocks/whk/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-frbt",
+      "market": "US",
+      "code": "FRBT",
+      "name": "Forbright, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-11",
+      "issuePrice": "18.00 - 20.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "John K. Delaney",
+      "summary": "该公司主要提供软件平台或云端服务，业务说明来自美股 IPO 公司资料页。归类在Financials板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "FRBT",
+      "sourceUrl": "https://stockanalysis.com/stocks/frbt/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
