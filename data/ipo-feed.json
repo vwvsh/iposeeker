@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-03T05:58:08+00:00",
+  "updatedAt": "2026-06-04T05:52:31+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -61,7 +61,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "68.15 CNY",
+      "currentPrice": "67.09 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -83,7 +83,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "78.08 CNY",
+      "currentPrice": "77.6 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -105,7 +105,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "71.9 CNY",
+      "currentPrice": "75.75 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -151,7 +151,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "678.08 CNY",
+      "currentPrice": "649.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -173,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "46.22 CNY",
+      "currentPrice": "57.21 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -267,7 +267,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "28.83 CNY",
+      "currentPrice": "33.49 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -280,28 +280,6 @@
       "searchCode": "920218:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920218&type=web",
       "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
-      "id": "us-aadx",
-      "market": "US",
-      "code": "AADX",
-      "name": "Applied Aerospace & Defense, Inc.",
-      "exchange": "NYSE",
-      "listingDate": "2026-06-03",
-      "issuePrice": "18.00 - 21.00 USD",
-      "currentPrice": null,
-      "sector": "Industrials",
-      "tags": [
-        "Stock Lists",
-        "NYSE",
-        "美股"
-      ],
-      "ceo": "James William Ferguson, III",
-      "summary": "该公司主要提供软件平台或云端服务，业务说明来自美股 IPO 公司资料页。归类在Industrials板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "AADX",
-      "sourceUrl": "https://stockanalysis.com/stocks/aadx/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-aesp",
@@ -323,6 +301,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "AESP",
       "sourceUrl": "https://stockanalysis.com/stocks/aesp/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-apmc",
+      "market": "US",
+      "code": "APMC",
+      "name": "AmperCap Acquisition Company",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-03",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Alberto Gutiérrez Pier & Harish Dadoo González",
+      "summary": "AmperCap Acquisition Company（APMC）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "APMC",
+      "sourceUrl": "https://stockanalysis.com/stocks/apmc/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
@@ -456,6 +456,28 @@
       "searchCode": "SSMR",
       "sourceUrl": "https://stockanalysis.com/stocks/ssmr/company/",
       "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "a-920211",
+      "market": "A",
+      "code": "920211",
+      "name": "新睿电子",
+      "exchange": "北交所",
+      "listingDate": "2026-06-05",
+      "issuePrice": "25.19 CNY",
+      "currentPrice": null,
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "待补充",
+      "summary": "新睿电子主要从事工业机器人控制系统及部件、伺服系统及部件的研发、生产和销售。。主要产品或服务类型包括工业机器人控制系统、伺服系统及部件。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920211:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920211&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
     },
     {
       "id": "us-whk",
