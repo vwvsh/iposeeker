@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-05T05:12:00+00:00",
+  "updatedAt": "2026-06-06T04:49:37+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -54,72 +54,6 @@
       "sourceName": "HKEX / 东方财富港股 IPO"
     },
     {
-      "id": "a-001237",
-      "market": "A",
-      "code": "001237",
-      "name": "惠康科技",
-      "exchange": "深交所主板",
-      "listingDate": "2026-05-22",
-      "issuePrice": "53.26 CNY",
-      "currentPrice": "66.96 CNY",
-      "sector": "A股新股",
-      "tags": [
-        "深交所主板",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "惠康科技主要从事制冷设备的研发、生产及销售。。主要产品或服务类型包括制冰机系列、冷柜、冰箱、酒柜系列。归类在A股新股板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "001237:SHE",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001237&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
-      "id": "a-603435",
-      "market": "A",
-      "code": "603435",
-      "name": "嘉德利",
-      "exchange": "上交所主板",
-      "listingDate": "2026-05-22",
-      "issuePrice": "15.76 CNY",
-      "currentPrice": "84.34 CNY",
-      "sector": "A股新股",
-      "tags": [
-        "上交所主板",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "嘉德利主要从事BOPP电工膜研发、生产和销售。。主要产品包括电容膜、复合铜箔基膜。归类在A股新股板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "603435:SHA",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH603435&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
-      "id": "a-920220",
-      "market": "A",
-      "code": "920220",
-      "name": "朗信电气",
-      "exchange": "北交所",
-      "listingDate": "2026-05-22",
-      "issuePrice": "28.29 CNY",
-      "currentPrice": "78.49 CNY",
-      "sector": "北交所",
-      "tags": [
-        "北交所",
-        "A股",
-        "东方财富新股"
-      ],
-      "ceo": "待补充",
-      "summary": "朗信电气主要从事汽车热管理零部件产品的研发、生产及销售。。主要产品或服务类型包括电机总成、电子风扇、电子水泵、空调鼓风机。归类在北交所板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "920220:BJS",
-      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920220&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
-    },
-    {
       "id": "h-06872",
       "market": "H",
       "code": "06872",
@@ -151,7 +85,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "608.35 CNY",
+      "currentPrice": "598.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -173,7 +107,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "65.0 CNY",
+      "currentPrice": "56.81 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -267,7 +201,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "31.76 CNY",
+      "currentPrice": "30.48 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -282,58 +216,14 @@
       "sourceName": "东方财富F10 / 新股数据"
     },
     {
-      "id": "us-ipvv",
-      "market": "US",
-      "code": "IPVV",
-      "name": "InterPrivate Investment Partners V, Inc.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-06-04",
-      "issuePrice": "10.00 USD",
-      "currentPrice": null,
-      "sector": "Financials",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Ahmed Fattouh",
-      "summary": "InterPrivate Investment Partners V, Inc.（IPVV）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "IPVV",
-      "sourceUrl": "https://stockanalysis.com/stocks/ipvv/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
-    },
-    {
-      "id": "us-ltgr",
-      "market": "US",
-      "code": "LTGR",
-      "name": "Long Table Growth Corp.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-06-04",
-      "issuePrice": "10.00 USD",
-      "currentPrice": null,
-      "sector": "Financials",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Gregory Ethridge",
-      "summary": "Long Table Growth Corp.（LTGR）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "LTGR",
-      "sourceUrl": "https://stockanalysis.com/stocks/ltgr/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
-    },
-    {
       "id": "a-920211",
       "market": "A",
       "code": "920211",
-      "name": "N新睿",
+      "name": "新睿电子",
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "238.68 CNY",
+      "currentPrice": "226.88 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -341,11 +231,55 @@
         "东方财富新股"
       ],
       "ceo": "待补充",
-      "summary": "N新睿主要从事工业机器人控制系统及部件、伺服系统及部件的研发、生产和销售。。主要产品或服务类型包括工业机器人控制系统、伺服系统及部件。归类在北交所板块。",
+      "summary": "新睿电子主要从事工业机器人控制系统及部件、伺服系统及部件的研发、生产和销售。。主要产品或服务类型包括工业机器人控制系统、伺服系统及部件。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920211:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920211&type=web",
       "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
+      "id": "us-ftra",
+      "market": "US",
+      "code": "FTRA",
+      "name": "FutureCorp Space Acquisition 1",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-05",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Joshua B. Marks",
+      "summary": "FutureCorp Space Acquisition 1（FTRA）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "FTRA",
+      "sourceUrl": "https://stockanalysis.com/stocks/ftra/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-idia",
+      "market": "US",
+      "code": "IDIA",
+      "name": "Innovative Digital Investors Acquisition Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-05",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Jonathan Bates",
+      "summary": "Innovative Digital Investors Acquisition Corp.（IDIA）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "IDIA",
+      "sourceUrl": "https://stockanalysis.com/stocks/idia/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-whk",
@@ -411,6 +345,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "EROC",
       "sourceUrl": "https://stockanalysis.com/stocks/eroc/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-pbls",
+      "market": "US",
+      "code": "PBLS",
+      "name": "Parabilis Medicines, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-10",
+      "issuePrice": "17.00 - 19.00 USD",
+      "currentPrice": null,
+      "sector": "Healthcare",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Mathai Mammen, M.D., Ph.D.",
+      "summary": "该公司主要提供软件平台或云端服务，业务说明来自美股 IPO 公司资料页。归类在Healthcare板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "PBLS",
+      "sourceUrl": "https://stockanalysis.com/stocks/pbls/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
