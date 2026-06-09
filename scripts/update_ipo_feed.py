@@ -16,7 +16,7 @@ FEED_PATH = ROOT / "data" / "ipo-feed.json"
 MANUAL_PATH = ROOT / "data" / "manual-ipo-overrides.json"
 CALENDAR_URL = "https://stockanalysis.com/ipos/calendar/"
 CN_TZ = ZoneInfo("Asia/Shanghai")
-RECENT_LISTED_DAYS = 14
+RECENT_LISTED_DAYS = 45
 LOOKAHEAD_DAYS = 30
 
 HEADERS = {
@@ -614,6 +614,25 @@ def apply_current_prices(items: list[dict[str, Any]]) -> tuple[list[dict[str, An
 
     return items, notes
 
+def has_missing_value(value: Any) -> bool:
+    text = "" if value is None else str(value).strip()
+    return text in {"", "待核实", "待上市", "待补充", "--", "-", "None", "null"}
+
+
+def apply_missing_hk_issue_prices(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    for item in items:
+        if item.get("market") != "H":
+            continue
+        if not has_missing_value(item.get("issuePrice")):
+            continue
+
+        code = str(item.get("code", "")).strip()
+        name = str(item.get("name", "")).strip()
+        issue_price = fetch_hk_issue_price(code, name)
+        if issue_price:
+            item["issuePrice"] = f"{issue_price} HKD"
+
+    return items
 
 def should_keep_existing(field: str, value: Any, existing: dict[str, Any]) -> bool:
     if value is None:
@@ -623,8 +642,8 @@ def should_keep_existing(field: str, value: Any, existing: dict[str, Any]) -> bo
     if text == "":
         return True
 
-    if field in {"issuePrice", "currentPrice"}:
-        if text in {"待核实", "待上市", "--", "-"} and existing.get(field):
+    if field in {"issuePrice", "currentPrice", "ceo"}:
+        if has_missing_value(text) and existing.get(field):
             return True
 
     return False
@@ -698,7 +717,9 @@ def main() -> None:
         us_items = [item for item in previous.get("items", []) if item.get("market") == "US"]
         notes.append(f"美股自动同步失败，沿用上一版美股数据：{exc}")
 
-    items = merge_items(h_items, manual.get("items", []), a_items, us_items)
+    previous_items = previous.get("items", [])
+    items = merge_items(previous_items, h_items, manual.get("items", []), a_items, us_items)
+    items = apply_missing_hk_issue_prices(items)
     items, price_notes = apply_current_prices(items)
     notes.extend(price_notes)
     feed = {
