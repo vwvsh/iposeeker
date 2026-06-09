@@ -16,6 +16,8 @@ FEED_PATH = ROOT / "data" / "ipo-feed.json"
 MANUAL_PATH = ROOT / "data" / "manual-ipo-overrides.json"
 CALENDAR_URL = "https://stockanalysis.com/ipos/calendar/"
 CN_TZ = ZoneInfo("Asia/Shanghai")
+RECENT_LISTED_DAYS = 14
+LOOKAHEAD_DAYS = 30
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; IPOSeekerBot/1.0; +https://github.com/vwvsh/iposeeker)"
@@ -226,9 +228,47 @@ def build_us_items() -> list[dict[str, Any]]:
 
 def normalize_float(value: Any) -> str | None:
     text = "" if value is None else str(value).strip()
-    if not text or text.lower() in {"nan", "nat", "none", "--"}:
+    if not text or text.lower() in {"nan", "nat", "none", "--", "-", "待上市"}:
         return None
     return text
+
+
+def parse_date(value: Any) -> datetime.date | None:
+    text = "" if value is None else str(value).strip()
+    if not text or text.lower() in {"nan", "nat", "none", "--", "-"}:
+        return None
+    for pattern in ("%Y-%m-%d", "%Y/%m/%d", "%Y%m%d"):
+        try:
+            return datetime.strptime(text[:10], pattern).date()
+        except ValueError:
+            continue
+    try:
+        return datetime.fromisoformat(text[:10]).date()
+    except ValueError:
+        return None
+
+
+def is_in_feed_window(listing_date: datetime.date, today: datetime.date) -> bool:
+    days = (listing_date - today).days
+    return -RECENT_LISTED_DAYS <= days <= LOOKAHEAD_DAYS
+
+
+def is_listed(item: dict[str, Any]) -> bool:
+    listing_date = parse_date(item.get("listingDate"))
+    return bool(listing_date and listing_date <= datetime.now(CN_TZ).date())
+
+
+def format_market_price(value: Any, currency: str) -> str | None:
+    text = normalize_float(value)
+    if not text:
+        return None
+    try:
+        number = float(str(text).replace(",", ""))
+    except ValueError:
+        return None
+    if number <= 0:
+        return None
+    return f"{number:.2f} {currency}"
 
 
 def a_share_exchange(code: str) -> str:
@@ -350,13 +390,11 @@ def build_a_items() -> list[dict[str, Any]]:
         if not code or not name or listing_raw is None:
             continue
 
-        try:
-            listing_date = datetime.fromisoformat(str(listing_raw)[:10]).date()
-        except ValueError:
+        listing_date = parse_date(listing_raw)
+        if not listing_date:
             continue
 
-        days = (listing_date - today).days
-        if days < -14 or days > 30:
+        if not is_in_feed_window(listing_date, today):
             continue
 
         issue_price = normalize_float(row.get("发行价格"))
@@ -394,6 +432,117 @@ def build_a_items() -> list[dict[str, Any]]:
     return output
 
 
+def hk_search_code(code: str) -> str:
+    return f"{code.lstrip('0') or code}:HKG"
+
+
+def build_h_items() -> list[dict[str, Any]]:
+    import akshare as ak  # type: ignore
+
+    df = ak.stock_ipo_hk_ths()
+    today = datetime.now(CN_TZ).date()
+    output: list[dict[str, Any]] = []
+
+    for row in df.to_dict(orient="records"):
+        raw_code = first_value_by_label([row], ("股票代码", "证券代码", "代码"))
+        code = re.sub(r"\D", "", raw_code).zfill(5)
+        name = (
+            first_value_by_label([row], ("股票简称", "证券简称", "简称", "名称"))
+            or str(row.get("股票简称", "")).strip()
+        )
+        listing_date = parse_date(
+            first_value_by_label([row], ("上市日期", "上市日", "挂牌日期"))
+            or row.get("上市日期")
+        )
+        if not code or not name or not listing_date:
+            continue
+        if not is_in_feed_window(listing_date, today):
+            continue
+
+        issue_price = (
+            normalize_float(first_value_by_label([row], ("发行价", "招股价", "发售价")))
+            or normalize_float(row.get("发行价"))
+            or normalize_float(row.get("招股价"))
+        )
+        sector = "港股新股"
+        summary = f"{name}为港股 IPO 标的，上市日期为{listing_date.isoformat()}。主营业务和管理层建议以招股书、港交所披露文件及公司公告为准。归类在港股新股板块。"
+
+        output.append(
+            {
+                "id": f"h-{code}",
+                "market": "H",
+                "code": code,
+                "name": name,
+                "exchange": "HKEX",
+                "listingDate": listing_date.isoformat(),
+                "issuePrice": f"{issue_price} HKD" if issue_price else "待核实",
+                "currentPrice": None,
+                "sector": sector,
+                "tags": ["港股", "港股新股", "同花顺新股"],
+                "ceo": "待补充",
+                "summary": summary,
+                "marketUrl": "https://www.google.com/finance/",
+                "searchCode": hk_search_code(code),
+                "sourceUrl": "https://stock.10jqka.com.cn/ipo/hk/",
+                "sourceName": "同花顺港股 IPO / AKShare"
+            }
+        )
+
+    return output
+
+
+def apply_current_prices(items: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[str]]:
+    notes: list[str] = []
+    price_map: dict[tuple[str, str], str] = {}
+
+    try:
+        import akshare as ak  # type: ignore
+    except Exception as exc:
+        return items, [f"行情同步失败，沿用上一版现价：{exc}"]
+
+    try:
+        df = ak.stock_zh_a_spot_em()
+        for row in df.to_dict(orient="records"):
+            code = str(row.get("代码", "")).strip().zfill(6)
+            price = format_market_price(row.get("最新价"), "CNY")
+            if code and price:
+                price_map[("A", code)] = price
+    except Exception as exc:
+        notes.append(f"A股现价同步失败：{exc}")
+
+    try:
+        df = ak.stock_hk_spot_em()
+        for row in df.to_dict(orient="records"):
+            code = str(row.get("代码", "")).strip().zfill(5)
+            price = format_market_price(row.get("最新价"), "HKD")
+            if code and price:
+                price_map[("H", code)] = price
+    except Exception as exc:
+        notes.append(f"港股现价同步失败：{exc}")
+
+    try:
+        df = ak.stock_us_spot_em()
+        for row in df.to_dict(orient="records"):
+            code = str(row.get("代码", "")).split(".")[-1].strip().upper()
+            price = format_market_price(row.get("最新价"), "USD")
+            if code and price:
+                price_map[("US", code)] = price
+    except Exception as exc:
+        notes.append(f"美股现价同步失败：{exc}")
+
+    for item in items:
+        market = item.get("market")
+        code = str(item.get("code", "")).strip().upper()
+        if market == "H":
+            code = code.zfill(5)
+        elif market == "A":
+            code = code.zfill(6)
+        if is_listed(item) and (market, code) in price_map:
+            item["currentPrice"] = price_map[(market, code)]
+
+    return items, notes
+
+
 def merge_items(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged: dict[str, dict[str, Any]] = {}
     for group in groups:
@@ -422,8 +571,8 @@ def main() -> None:
     manual = read_json(MANUAL_PATH, {"notes": [], "items": []})
     previous = read_json(FEED_PATH, {"items": []})
     notes = [
-        "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
-        "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。"
+        "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
+        "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。"
     ]
 
     try:
@@ -433,12 +582,20 @@ def main() -> None:
         notes.append(f"A股自动同步失败，沿用上一版A股数据：{exc}")
 
     try:
+        h_items = build_h_items()
+    except Exception as exc:
+        h_items = [item for item in previous.get("items", []) if item.get("market") == "H"]
+        notes.append(f"港股自动同步失败，沿用上一版港股数据：{exc}")
+
+    try:
         us_items = build_us_items()
     except Exception as exc:
         us_items = [item for item in previous.get("items", []) if item.get("market") == "US"]
         notes.append(f"美股自动同步失败，沿用上一版美股数据：{exc}")
 
-    items = merge_items(manual.get("items", []), a_items, us_items)
+    items = merge_items(h_items, manual.get("items", []), a_items, us_items)
+    items, price_notes = apply_current_prices(items)
+    notes.extend(price_notes)
     feed = {
         "updatedAt": datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
         "notes": notes + manual.get("notes", []),
