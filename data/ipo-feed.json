@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-06-09T04:59:39+00:00",
+  "updatedAt": "2026-06-09T06:21:45+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
-    "港股和A股暂放在手工补充文件中，避免使用未验证来源自动生成错误行情。",
-    "后续可接入 HKEX、交易所公告或授权数据 API 后改为自动抓取。"
+    "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
+    "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
   "items": [
     {
@@ -85,7 +85,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "547.0 CNY",
+      "currentPrice": "548.88 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -107,7 +107,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "52.58 CNY",
+      "currentPrice": "52.84 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -201,7 +201,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "27.1 CNY",
+      "currentPrice": "27.03 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -223,7 +223,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "189.9 CNY",
+      "currentPrice": "187.0 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -245,7 +245,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "92.52 CNY",
+      "currentPrice": "91.61 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -267,7 +267,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "51.88 CNY",
+      "currentPrice": "51.55 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
