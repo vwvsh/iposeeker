@@ -452,7 +452,49 @@ def build_a_items() -> list[dict[str, Any]]:
 
 def hk_search_code(code: str) -> str:
     return f"{code.lstrip('0') or code}:HKG"
+def fetch_hk_issue_price(code: str, name: str = "") -> str | None:
+    padded_code = code.zfill(5)
+    urls = [
+        f"https://www.infocastfn.com/ipo-detail?ipoId={padded_code}",
+        f"https://www.aastocks.com/sc/stocks/quote/detail-quote.aspx?symbol={padded_code}",
+    ]
 
+    patterns = [
+        r"Issue Price\s*\(HKD\)\s*([0-9]+(?:\.[0-9]+)?)\s*[-–]\s*([0-9]+(?:\.[0-9]+)?)",
+        r"Issue Price[^0-9]{0,40}([0-9]+(?:\.[0-9]+)?)",
+        r"发售价[^0-9]{0,40}([0-9]+(?:\.[0-9]+)?)\s*港元",
+        r"发行价[^0-9]{0,40}([0-9]+(?:\.[0-9]+)?)\s*港元",
+        r"每股(?:发售股份)?[^0-9]{0,40}([0-9]+(?:\.[0-9]+)?)\s*港元",
+        r"上市价[^0-9]{0,40}([0-9]+(?:\.[0-9]+)?)\s*元",
+    ]
+
+    for url in urls:
+        try:
+            html = fetch(url)
+        except Exception:
+            continue
+
+        text = unescape(re.sub(r"<[^>]+>", " ", html))
+        text = re.sub(r"\s+", " ", text)
+
+        if name and name not in text and padded_code not in text:
+            continue
+
+        for pattern in patterns:
+            match = re.search(pattern, text, flags=re.IGNORECASE)
+            if not match:
+                continue
+
+            price = match.group(2) if match.lastindex and match.lastindex >= 2 else match.group(1)
+            try:
+                number = float(price)
+            except ValueError:
+                continue
+
+            if number > 0:
+                return f"{number:.2f}"
+
+    return None
 
 def build_h_items() -> list[dict[str, Any]]:
     import akshare as ak  # type: ignore
@@ -477,10 +519,11 @@ def build_h_items() -> list[dict[str, Any]]:
         if not is_in_feed_window(listing_date, today):
             continue
 
-        issue_price = (
+            issue_price = (
             normalize_float(first_value_by_label([row], ("发行价", "招股价", "发售价")))
             or normalize_float(row.get("发行价"))
             or normalize_float(row.get("招股价"))
+            or fetch_hk_issue_price(code, name)
         )
         sector = "港股新股"
         summary = f"{name}为港股 IPO 标的，上市日期为{listing_date.isoformat()}。主营业务和管理层建议以招股书、港交所披露文件及公司公告为准。归类在港股新股板块。"
