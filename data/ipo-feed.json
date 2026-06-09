@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-06-09T07:00:44+00:00",
+  "updatedAt": "2026-06-09T07:35:48+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 6 条。",
+    "港股现价已通过东方财富单股备用接口补充 2 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -20,7 +20,7 @@
       "exchange": "HKEX",
       "listingDate": "2026-05-20",
       "issuePrice": "待核实",
-      "currentPrice": "82.40 HKD",
+      "currentPrice": "82.65 HKD",
       "sector": "自动驾驶",
       "tags": [
         "无人驾驶",
@@ -43,7 +43,7 @@
       "exchange": "HKEX",
       "listingDate": "2026-05-20",
       "issuePrice": "26.39 HKD",
-      "currentPrice": "34.32 HKD",
+      "currentPrice": "34.98 HKD",
       "sector": "数控设备",
       "tags": [
         "数控系统",
@@ -66,7 +66,7 @@
       "exchange": "HKEX",
       "listingDate": "2026-05-22",
       "issuePrice": "75.70 HKD",
-      "currentPrice": "209.00 HKD",
+      "currentPrice": null,
       "sector": "生物医药",
       "tags": [
         "感染性疾病",
@@ -89,7 +89,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "547.74 CNY",
+      "currentPrice": "547.77 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -111,7 +111,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "51.02 CNY",
+      "currentPrice": "51.01 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -134,7 +134,7 @@
       "exchange": "HKEX",
       "listingDate": "2026-05-27",
       "issuePrice": "32.80 HKD",
-      "currentPrice": "59.35 HKD",
+      "currentPrice": null,
       "sector": "智能终端",
       "tags": [
         "加密芯片",
@@ -158,7 +158,7 @@
       "exchange": "HKEX",
       "listingDate": "2026-05-27",
       "issuePrice": "43.50-55.50 HKD",
-      "currentPrice": "349.80 HKD",
+      "currentPrice": null,
       "sector": "AI 营销",
       "tags": [
         "智能广告",
@@ -182,7 +182,7 @@
       "exchange": "HKEX",
       "listingDate": "2026-05-27",
       "issuePrice": "20.81 HKD",
-      "currentPrice": "32.78 HKD",
+      "currentPrice": null,
       "sector": "半导体",
       "tags": [
         "OLED 驱动芯片",
@@ -205,7 +205,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "27.01 CNY",
+      "currentPrice": "27.02 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -227,7 +227,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "183.81 CNY",
+      "currentPrice": "181.06 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -249,7 +249,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "93.0 CNY",
+      "currentPrice": "92.0 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -284,6 +284,50 @@
       "searchCode": "301669:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301669&type=web",
       "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
+      "id": "us-isnr",
+      "market": "US",
+      "code": "ISNR",
+      "name": "Snow Rothschild Acquisition Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-09",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Ian Snow",
+      "summary": "Snow Rothschild Acquisition Corp.（ISNR）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "ISNR",
+      "sourceUrl": "https://stockanalysis.com/stocks/isnr/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-ocac",
+      "market": "US",
+      "code": "OCAC",
+      "name": "Ocean Capital Acquisition Corporation",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-09",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Kin (Stephen) Sze",
+      "summary": "Ocean Capital Acquisition Corporation（OCAC）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "OCAC",
+      "sourceUrl": "https://stockanalysis.com/stocks/ocac/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-whk",
@@ -327,6 +371,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "EROC",
       "sourceUrl": "https://stockanalysis.com/stocks/eroc/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-jab",
+      "market": "US",
+      "code": "JAB",
+      "name": "JAB Acquisition Corp I",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-10",
+      "issuePrice": "10.00 USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Joshua Jagid",
+      "summary": "JAB Acquisition Corp I（JAB）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "JAB",
+      "sourceUrl": "https://stockanalysis.com/stocks/jab/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
@@ -374,6 +440,28 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-mot",
+      "market": "US",
+      "code": "MOT",
+      "name": "MetaOptics Ltd",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-12",
+      "issuePrice": "- USD",
+      "currentPrice": null,
+      "sector": "Technology",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Mr. Aloysius Chua Hao Peng",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Technology板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "MOT",
+      "sourceUrl": "https://stockanalysis.com/stocks/mot/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
       "id": "us-spcx",
       "market": "US",
       "code": "SPCX",
@@ -393,6 +481,28 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "SPCX",
       "sourceUrl": "https://stockanalysis.com/stocks/spcx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-fcbm",
+      "market": "US",
+      "code": "FCBM",
+      "name": "First Carolina Financial Services, Inc.",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-18",
+      "issuePrice": "- USD",
+      "currentPrice": null,
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Ronald A. Day",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Financials板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "FCBM",
+      "sourceUrl": "https://stockanalysis.com/stocks/fcbm/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
