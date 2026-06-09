@@ -613,27 +613,58 @@ def apply_current_prices(items: list[dict[str, Any]]) -> tuple[list[dict[str, An
     return items, notes
 
 
+def should_keep_existing(field: str, value: Any, existing: dict[str, Any]) -> bool:
+    if value is None:
+        return True
+
+    text = str(value).strip()
+    if text == "":
+        return True
+
+    if field in {"issuePrice", "currentPrice"}:
+        if text in {"待核实", "待上市", "--", "-"} and existing.get(field):
+            return True
+
+    return False
+
+
 def merge_items(*groups: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged: dict[str, dict[str, Any]] = {}
+
     for group in groups:
         for item in group:
-            market = item.get("market")
-            code = str(item.get("code", ""))
+            item_id = item["id"]
+            existing = merged.get(item_id, {})
+            next_item = dict(existing)
+
+            for key, value in item.items():
+                if should_keep_existing(key, value, existing):
+                    continue
+                next_item[key] = value
+
+            market = next_item.get("market")
+            code = str(next_item.get("code", ""))
+
             if market in {"A", "H", "US"}:
-                item["marketUrl"] = "https://www.google.com/finance/"
+                next_item["marketUrl"] = "https://www.google.com/finance/"
+
             if market == "US" and code:
-                item["searchCode"] = code
+                next_item["searchCode"] = code
+
             if market == "H" and code:
-                item["searchCode"] = item.get("searchCode") or f"{code}:HKG"
+                next_item["searchCode"] = next_item.get("searchCode") or f"{code}:HKG"
+
             if market == "A":
                 if code:
-                    item["searchCode"] = a_share_search_code(code)
-                    item["marketUrl"] = a_share_market_url(code)
-                    item["sourceUrl"] = a_share_f10_url(code)
-                    item["sourceName"] = "东方财富F10 / 新股数据"
-                if "待核实" in str(item.get("ceo", "")):
-                    item["ceo"] = fetch_a_share_leader(code) if code else "待补充"
-            merged[item["id"]] = item
+                    next_item["searchCode"] = a_share_search_code(code)
+                    next_item["marketUrl"] = a_share_market_url(code)
+                    next_item["sourceUrl"] = a_share_f10_url(code)
+                    next_item["sourceName"] = "东方财富F10 / 新股数据"
+                if "待核实" in str(next_item.get("ceo", "")):
+                    next_item["ceo"] = fetch_a_share_leader(code) if code else "待补充"
+
+            merged[item_id] = next_item
+
     return sorted(merged.values(), key=lambda item: (item["listingDate"], item["market"], item["code"]))
 
 
