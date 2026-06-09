@@ -374,24 +374,111 @@ def fetch_a_share_business_summary(code: str, name: str, sector: str) -> str:
     return f"{name}为 A 股 IPO 标的，具体主营业务、产品结构和管理层信息请查看 F10 资料及公司公告。归类在{sector}板块。"
 
 
+def clean_person_name(value: Any) -> str:
+    text = str(value or "").strip()
+    text = re.sub(r"\s+", "", text)
+    text = text.strip("\uff1a:\uff0c,\u3002\uff1b;\uff08\uff09()[]\u3010\u3011")
+    if not text or text.lower() in {"nan", "none", "--", "-", "\u5f85\u8865\u5145", "\u5f85\u6838\u5b9e"}:
+        return ""
+    match = re.search(r"[\u4e00-\u9fa5\u00b7]{2,8}", text)
+    return match.group(0) if match else ""
+
+
+def eastmoney_payload_records(payload: Any) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    stack = [payload]
+
+    while stack:
+        item = stack.pop()
+        if isinstance(item, dict):
+            if item and all(not isinstance(value, (dict, list)) for value in item.values()):
+                records.append(item)
+            stack.extend(item.values())
+        elif isinstance(item, list):
+            stack.extend(item)
+
+    return records
+
+
+def leader_from_records(records: list[dict[str, Any]]) -> str:
+    title_priority = ("\u8463\u4e8b\u957f", "\u603b\u7ecf\u7406", "\u603b\u88c1", "\u9996\u5e2d\u6267\u884c\u5b98", "\u6cd5\u5b9a\u4ee3\u8868\u4eba")
+    name_keys = ("\u59d3\u540d", "\u540d\u79f0", "\u9ad8\u7ba1\u59d3\u540d", "\u4eba\u5458\u59d3\u540d", "PERSON_NAME", "SECURITY_NAME", "NAME")
+    role_keys = ("\u804c\u52a1", "\u804c\u4f4d", "\u4efb\u804c", "\u804c\u79f0", "POSITION", "TITLE", "JOB_TITLE", "DUTY")
+
+    for title in title_priority:
+        for record in records:
+            role_text = " ".join(str(record.get(key, "")) for key in role_keys)
+            whole_text = " ".join(str(value) for value in record.values())
+            if title not in role_text and title not in whole_text:
+                continue
+
+            for key in name_keys:
+                name = clean_person_name(record.get(key))
+                if name and name != title:
+                    return f"{title}\uff1a{name}"
+
+            patterns = (
+                rf"([\u4e00-\u9fa5\u00b7]{{2,8}})[^\n]{{0,30}}{re.escape(title)}",
+                rf"{re.escape(title)}[\uff1a:\s]+([\u4e00-\u9fa5\u00b7]{{2,8}})",
+            )
+            for pattern in patterns:
+                match = re.search(pattern, whole_text)
+                if match:
+                    name = clean_person_name(match.group(1))
+                    if name and name != title:
+                        return f"{title}\uff1a{name}"
+
+    return ""
+
+
+def leader_from_text(text: str) -> str:
+    compact = re.sub(r"\s+", " ", text)
+    for title in ("\u8463\u4e8b\u957f", "\u603b\u7ecf\u7406", "\u603b\u88c1", "\u9996\u5e2d\u6267\u884c\u5b98", "\u6cd5\u5b9a\u4ee3\u8868\u4eba"):
+        patterns = (
+            rf"{re.escape(title)}[\uff1a:\s]{{1,8}}([\u4e00-\u9fa5\u00b7]{{2,8}})",
+            rf"([\u4e00-\u9fa5\u00b7]{{2,8}})[^\n]{{0,40}}{re.escape(title)}",
+        )
+        for pattern in patterns:
+            match = re.search(pattern, compact)
+            if match:
+                name = clean_person_name(match.group(1))
+                if name and name != title:
+                    return f"{title}\uff1a{name}"
+    return ""
+
+
 def fetch_a_share_leader(code: str) -> str:
-    try:
-        html = fetch(a_share_f10_url(code))
-    except Exception:
-        return "待补充"
+    symbol = eastmoney_symbol(code)
+    urls = [
+        f"https://emweb.securities.eastmoney.com/PC_HSF10/CompanyManagement/PageAjax?code={symbol}",
+        f"https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/PageAjax?code={symbol}",
+        f"https://emweb.securities.eastmoney.com/PC_HSF10/CompanyManagement/Index?code={symbol}&type=web",
+        a_share_f10_url(code),
+    ]
 
-    parser = TextParser()
-    parser.feed(html)
-    lines = [line.strip() for line in parser.text.splitlines() if line.strip()]
-    joined = "\n".join(lines)
+    for url in urls:
+        try:
+            raw = fetch(url)
+        except Exception:
+            continue
 
-    for title in ("董事长", "总经理"):
-        pattern = rf"([\u4e00-\u9fa5·]{2,6})\s+[^\n]{{0,40}}{title}"
-        match = re.search(pattern, joined)
-        if match:
-            return f"{title}：{match.group(1)}"
+        try:
+            payload = json.loads(raw)
+        except Exception:
+            payload = None
 
-    return "待补充"
+        if payload is not None:
+            leader = leader_from_records(eastmoney_payload_records(payload))
+            if leader:
+                return leader
+
+        parser = TextParser()
+        parser.feed(raw)
+        leader = leader_from_text(parser.text or raw)
+        if leader:
+            return leader
+
+    return "\u5f85\u8865\u5145"
 
 
 def build_a_items() -> list[dict[str, Any]]:
