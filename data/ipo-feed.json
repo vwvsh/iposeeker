@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-08T05:31:09+00:00",
+  "updatedAt": "2026-06-09T04:59:39+00:00",
   "notes": [
     "自动更新：美股 IPO 日历由 StockAnalysis 同步；港股/A股暂由 data/manual-ipo-overrides.json 补充。",
     "IPO 日期可能会变化；未上市股票的行情入口优先指向 IPO 详情页，上市后再接实时行情。",
@@ -85,7 +85,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "563.11 CNY",
+      "currentPrice": "547.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -107,7 +107,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "54.61 CNY",
+      "currentPrice": "52.58 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -201,7 +201,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "29.71 CNY",
+      "currentPrice": "27.1 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -223,7 +223,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "201.01 CNY",
+      "currentPrice": "189.9 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -241,11 +241,11 @@
       "id": "a-920206",
       "market": "A",
       "code": "920206",
-      "name": "N彩客",
+      "name": "彩客科技",
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "86.0 CNY",
+      "currentPrice": "92.52 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -253,7 +253,7 @@
         "东方财富新股"
       ],
       "ceo": "待补充",
-      "summary": "N彩客主要从事高性能有机颜料中间体、食品添加剂中间体及新材料聚合单体的研发、生产及销售。。主要产品或服务类型包括高性能有机颜料中间体、光稳定剂中间体、食品添加剂中间体。归类在北交所板块。",
+      "summary": "彩客科技主要从事高性能有机颜料中间体、食品添加剂中间体及新材料聚合单体的研发、生产及销售。。主要产品或服务类型包括高性能有机颜料中间体、光稳定剂中间体、食品添加剂中间体。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920206:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920206&type=web",
@@ -263,11 +263,11 @@
       "id": "a-301669",
       "market": "A",
       "code": "301669",
-      "name": "高特电子",
+      "name": "N高特",
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": null,
+      "currentPrice": "51.88 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -275,7 +275,7 @@
         "东方财富新股"
       ],
       "ceo": "待补充",
-      "summary": "高特电子主要从事向新能源产业提供安全、可靠、高效、稳定且更具经济性的新型储能电池管理系统相关产品。。主要产品或服务类型包括储能BMS相关产品、一体化集控单元及数据服务、后备电源BMS产品、动力电池BMS产品、电等。归类在创业板板块。",
+      "summary": "N高特主要从事向新能源产业提供安全、可靠、高效、稳定且更具经济性的新型储能电池管理系统相关产品。。主要产品或服务类型包括储能BMS相关产品、一体化集控单元及数据服务、后备电源BMS产品、动力电池BMS产品、电等。归类在创业板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "301669:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301669&type=web",
