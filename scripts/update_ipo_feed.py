@@ -271,6 +271,24 @@ def format_market_price(value: Any, currency: str) -> str | None:
     return f"{number:.2f} {currency}"
 
 
+def eastmoney_hk_price(code: str) -> str | None:
+    url = f"https://push2.eastmoney.com/api/qt/stock/get?secid=116.{code.zfill(5)}&fields=f43,f58"
+    try:
+        payload = json.loads(fetch(url))
+    except Exception:
+        return None
+
+    data = payload.get("data") or {}
+    raw_price = data.get("f43")
+    try:
+        price = float(raw_price) / 1000
+    except (TypeError, ValueError):
+        return None
+    if price <= 0:
+        return None
+    return f"{price:.2f} HKD"
+
+
 def a_share_exchange(code: str) -> str:
     if code.startswith("688") or code.startswith("689"):
         return "上交所科创板"
@@ -530,6 +548,7 @@ def apply_current_prices(items: list[dict[str, Any]]) -> tuple[list[dict[str, An
     except Exception as exc:
         notes.append(f"美股现价同步失败：{exc}")
 
+    hk_fallback_count = 0
     for item in items:
         market = item.get("market")
         code = str(item.get("code", "")).strip().upper()
@@ -537,8 +556,16 @@ def apply_current_prices(items: list[dict[str, Any]]) -> tuple[list[dict[str, An
             code = code.zfill(5)
         elif market == "A":
             code = code.zfill(6)
+        if market == "H" and is_listed(item) and ("H", code) not in price_map:
+            fallback_price = eastmoney_hk_price(code)
+            if fallback_price:
+                price_map[("H", code)] = fallback_price
+                hk_fallback_count += 1
         if is_listed(item) and (market, code) in price_map:
             item["currentPrice"] = price_map[(market, code)]
+
+    if hk_fallback_count:
+        notes.append(f"港股现价已通过东方财富单股备用接口补充 {hk_fallback_count} 条。")
 
     return items, notes
 
