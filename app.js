@@ -1,6 +1,6 @@
 const DATA_URL = "./data/ipo-feed.json";
 const FAVORITES_KEY = "ipo-radar:favorites";
-const CACHE_KEY = "ipo-radar:feed-cache:v8";;
+const CACHE_KEY = "ipo-radar:feed-cache:v9";;
 const LAST_CHECK_KEY = "ipo-radar:last-check";
 
 const fallbackFeed = {
@@ -242,15 +242,14 @@ function render() {
 }
 
 async function refreshFeed({ force = false } = {}) {
-  const lastCheck = localStorage.getItem(LAST_CHECK_KEY);
-  const cached = localStorage.getItem(CACHE_KEY);
+const lastCheck = localStorage.getItem(LAST_CHECK_KEY);
 
-  if (!force && cached && lastCheck === todayKey()) {
-    state.feed = JSON.parse(cached);
-    renderStatus("今日缓存");
-    render();
-    return;
-  }
+if (!force && cached && lastCheck === todayKey()) {
+  state.feed = JSON.parse(cached);
+  renderStatus("今日缓存");
+  render();
+  return;
+}
 
   try {
     elements.feedStatus.textContent = "正在同步数据";
