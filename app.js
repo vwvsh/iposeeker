@@ -242,16 +242,9 @@ function render() {
 }
 
 async function refreshFeed({ force = false } = {}) {
-const lastCheck = localStorage.getItem(LAST_CHECK_KEY);
+const cached = localStorage.getItem(CACHE_KEY);
 
-if (!force && cached && lastCheck === todayKey()) {
-  state.feed = JSON.parse(cached);
-  renderStatus("今日缓存");
-  render();
-  return;
-}
-
-  try {
+try {
     elements.feedStatus.textContent = "正在同步数据";
     const response = await fetch(DATA_URL, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
