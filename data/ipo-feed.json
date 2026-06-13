@@ -1,8 +1,12 @@
 {
-  "updatedAt": "2026-06-12T05:39:58+00:00",
+  "updatedAt": "2026-06-13T05:17:58+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
+    "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -37,7 +41,7 @@
       "exchange": "北交所",
       "listingDate": "2026-04-29",
       "issuePrice": "16.21 CNY",
-      "currentPrice": "89.05 CNY",
+      "currentPrice": "83.7 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -59,7 +63,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-04-30",
       "issuePrice": "13.91 CNY",
-      "currentPrice": "46.33 CNY",
+      "currentPrice": "45.69 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -81,7 +85,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-07",
       "issuePrice": "20.58 CNY",
-      "currentPrice": "41.57 CNY",
+      "currentPrice": "40.2 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -103,7 +107,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.3 CNY",
-      "currentPrice": "65.93 CNY",
+      "currentPrice": "64.52 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -125,7 +129,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.86 CNY",
-      "currentPrice": "51.46 CNY",
+      "currentPrice": "51.95 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -147,7 +151,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "55.51 CNY",
+      "currentPrice": "54.81 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -169,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "111.50 CNY",
+      "currentPrice": "104.32 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -191,7 +195,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "38.56 CNY",
+      "currentPrice": "38.0 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -213,7 +217,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "56.35 CNY",
+      "currentPrice": "53.97 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -247,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "94.20 HKD"
+      "currentPrice": "92.25 HKD"
     },
     {
       "id": "h-07688",
@@ -280,7 +284,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "61.68 CNY",
+      "currentPrice": "60.6 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -302,7 +306,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "62.48 CNY",
+      "currentPrice": "60.91 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -324,7 +328,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "58.00 CNY",
+      "currentPrice": "55.78 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -370,7 +374,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "420.30 CNY",
+      "currentPrice": "409.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -392,7 +396,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "37.70 CNY",
+      "currentPrice": "36.5 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -486,7 +490,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "21.40 CNY",
+      "currentPrice": "20.51 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -508,7 +512,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "126.21 CNY",
+      "currentPrice": "121.66 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -530,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "66.29 CNY",
+      "currentPrice": "61.2 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -552,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "40.50 CNY",
+      "currentPrice": "38.18 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -736,7 +740,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "42.56 CNY"
+      "currentPrice": "39.8 CNY"
     },
     {
       "id": "us-frbt",
