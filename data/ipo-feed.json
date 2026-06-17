@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-06-16T06:29:51+00:00",
+  "updatedAt": "2026-06-17T06:05:57+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 6 条。",
+    "港股现价已通过东方财富单股备用接口补充 4 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -85,7 +85,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-07",
       "issuePrice": "20.58 CNY",
-      "currentPrice": "41.51 CNY",
+      "currentPrice": "41.15 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -107,7 +107,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.3 CNY",
-      "currentPrice": "71.04 CNY",
+      "currentPrice": "69.02 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -129,7 +129,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.86 CNY",
-      "currentPrice": "62.87 CNY",
+      "currentPrice": "62.59 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -151,7 +151,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "61.01 CNY",
+      "currentPrice": "58.3 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -173,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "121.57 CNY",
+      "currentPrice": "144.17 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -195,7 +195,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "40.75 CNY",
+      "currentPrice": "40.22 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -217,7 +217,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "55.99 CNY",
+      "currentPrice": "59.97 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -251,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "94.80 HKD"
+      "currentPrice": "93.80 HKD"
     },
     {
       "id": "h-07688",
@@ -284,7 +284,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "65.16 CNY",
+      "currentPrice": "64.18 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -306,7 +306,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "69.3 CNY",
+      "currentPrice": "70.27 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -328,7 +328,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "58.23 CNY",
+      "currentPrice": "64.34 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -364,7 +364,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "248.40 HKD"
+      "currentPrice": "258.60 HKD"
     },
     {
       "id": "a-688635",
@@ -374,7 +374,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "509.99 CNY",
+      "currentPrice": "501.74 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +396,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "40.51 CNY",
+      "currentPrice": "42.16 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -432,7 +432,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公开 IPO 资料",
-      "currentPrice": "63.65 HKD"
+      "currentPrice": "61.95 HKD"
     },
     {
       "id": "h-02723",
@@ -456,7 +456,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / etnet IPO",
-      "currentPrice": "240.40 HKD"
+      "currentPrice": "255.00 HKD"
     },
     {
       "id": "h-03310",
@@ -490,7 +490,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "21.17 CNY",
+      "currentPrice": "22.39 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -512,7 +512,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "130.87 CNY",
+      "currentPrice": "142.53 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "60.25 CNY",
+      "currentPrice": "65.0 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "38.48 CNY",
+      "currentPrice": "37.18 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -740,7 +740,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "51.19 CNY"
+      "currentPrice": "57.35 CNY"
     },
     {
       "id": "us-frbt",
@@ -805,7 +805,28 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "16.42 CNY"
+      "currentPrice": "16.93 CNY"
+    },
+    {
+      "id": "us-yicc",
+      "market": "US",
+      "code": "YICC",
+      "name": "Yorkville International Capital Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-16",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Kevin McGurn",
+      "summary": "Yorkville International Capital Corp.（YICC）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "YICC",
+      "sourceUrl": "https://stockanalysis.com/stocks/yicc/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-fcbm",
@@ -850,6 +871,27 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-tviv",
+      "market": "US",
+      "code": "TVIV",
+      "name": "Texas Ventures Acquisition IV Corp",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-18",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "E. Scott Crist",
+      "summary": "Texas Ventures Acquisition IV Corp（TVIV）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "TVIV",
+      "sourceUrl": "https://stockanalysis.com/stocks/tviv/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
       "id": "us-mot",
       "market": "US",
       "code": "MOT",
@@ -868,6 +910,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "MOT",
       "sourceUrl": "https://stockanalysis.com/stocks/mot/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-dpc",
+      "market": "US",
+      "code": "DPC",
+      "name": "DPC Holdings PLC",
+      "exchange": "NYSE",
+      "listingDate": "2026-06-25",
+      "issuePrice": "28.00 - 32.00 USD",
+      "sector": "Industrials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Michael Joseph Quinn",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Industrials板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "DPC",
+      "sourceUrl": "https://stockanalysis.com/stocks/dpc/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
