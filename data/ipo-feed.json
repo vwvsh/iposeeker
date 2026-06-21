@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-06-20T05:07:59+00:00",
+  "updatedAt": "2026-06-21T05:57:21+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 2 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -910,6 +909,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "WLCO",
       "sourceUrl": "https://stockanalysis.com/stocks/wlco/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-alpx",
+      "market": "US",
+      "code": "ALPX",
+      "name": "Alopexx, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-24",
+      "issuePrice": "5.00 USD",
+      "sector": "Biotechnology",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Daniel R. Vlock",
+      "summary": "该公司业务与医疗健康、生命科学或药物研发相关，具体产品线以公司披露资料为准。归类在Biotechnology板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "ALPX",
+      "sourceUrl": "https://stockanalysis.com/stocks/alpx/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
