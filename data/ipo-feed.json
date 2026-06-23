@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-06-22T06:28:31+00:00",
+  "updatedAt": "2026-06-23T05:05:42+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 4 条。",
+    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -107,7 +107,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.3 CNY",
-      "currentPrice": "74.1 CNY",
+      "currentPrice": "71.96 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -129,7 +129,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.86 CNY",
-      "currentPrice": "74.84 CNY",
+      "currentPrice": "82.32 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -151,7 +151,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "57.64 CNY",
+      "currentPrice": "59.05 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -173,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "148.8 CNY",
+      "currentPrice": "150.16 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -195,7 +195,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "44.16 CNY",
+      "currentPrice": "42.22 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -217,7 +217,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "53.9 CNY",
+      "currentPrice": "55.35 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -284,7 +284,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "63.75 CNY",
+      "currentPrice": "64.96 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -306,7 +306,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "67.55 CNY",
+      "currentPrice": "65.06 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -328,7 +328,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "58.38 CNY",
+      "currentPrice": "59.98 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -374,7 +374,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "512.0 CNY",
+      "currentPrice": "505.3 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +396,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "40.2 CNY",
+      "currentPrice": "40.63 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -456,7 +456,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / etnet IPO",
-      "currentPrice": "332.40 HKD"
+      "currentPrice": "320.00 HKD"
     },
     {
       "id": "h-03310",
@@ -490,7 +490,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "19.82 CNY",
+      "currentPrice": "20.24 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -512,7 +512,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "130.51 CNY",
+      "currentPrice": "132.08 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "72.1 CNY",
+      "currentPrice": "66.95 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -542,7 +542,7 @@
         "东方财富新股"
       ],
       "ceo": "董事长：刘伟",
-      "summary": "彩客科技主要从事高性能有机颜料中间体、食品添加剂中间体及新材料聚合单体的研发、生产及销售。。主要产品或服务类型包括高性能有机颜料中间体、光稳定剂中间体、食品添加剂中间体。归类在北交所板块。",
+      "summary": "彩客科技为 A 股 IPO 标的，具体主营业务、产品结构和管理层信息请查看 F10 资料及公司公告。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920206:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920206&type=web",
@@ -556,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "39.44 CNY",
+      "currentPrice": "37.84 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -740,7 +740,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "66.9 CNY"
+      "currentPrice": "72.0 CNY"
     },
     {
       "id": "us-frbt",
@@ -805,7 +805,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "15.54 CNY"
+      "currentPrice": "15.15 CNY"
     },
     {
       "id": "us-yicc",
@@ -913,6 +913,27 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "a-688797",
+      "market": "A",
+      "code": "688797",
+      "name": "臻宝科技",
+      "exchange": "上交所科创板",
+      "listingDate": "2026-06-24",
+      "issuePrice": "44.56 CNY",
+      "sector": "科创板",
+      "tags": [
+        "上交所科创板",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：王兵",
+      "summary": "臻宝科技主要从事提供制造设备真空腔体内参与工艺反应的零部件及其表面处理解决方案。。主要产品或服务类型包括硅、石英、碳化硅和氧化铝陶瓷等设备零部件产品、熔射再生、阳极氧化和精密清洗等表面处理服务等。归类在科创板板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "688797:SHA",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
       "id": "us-alpx",
       "market": "US",
       "code": "ALPX",
@@ -973,6 +994,48 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "MOT",
       "sourceUrl": "https://stockanalysis.com/stocks/mot/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-itg",
+      "market": "US",
+      "code": "ITG",
+      "name": "ITG, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-01",
+      "issuePrice": "19.00 - 22.00 USD",
+      "sector": "Industrials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Andrew D. Parrott",
+      "summary": "该公司主要提供软件平台或云端服务，业务说明来自美股 IPO 公司资料页。归类在Industrials板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "ITG",
+      "sourceUrl": "https://stockanalysis.com/stocks/itg/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-sind",
+      "market": "US",
+      "code": "SIND",
+      "name": "Sinda Ltd.",
+      "exchange": "NYSE",
+      "listingDate": "2026-07-01",
+      "issuePrice": "11.25 - 13.25 USD",
+      "sector": "Materials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Luis Barreto",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Materials板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "SIND",
+      "sourceUrl": "https://stockanalysis.com/stocks/sind/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
