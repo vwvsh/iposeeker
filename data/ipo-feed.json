@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-06-25T04:59:36+00:00",
+  "updatedAt": "2026-06-26T05:07:00+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "港股现价已通过东方财富单股备用接口补充 6 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -150,7 +151,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "55.42 CNY",
+      "currentPrice": "51.37 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -172,7 +173,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "162.04 CNY",
+      "currentPrice": "147.35 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -194,7 +195,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "39.95 CNY",
+      "currentPrice": "37.23 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -216,7 +217,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "51.33 CNY",
+      "currentPrice": "49.18 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -250,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "97.45 HKD"
+      "currentPrice": "93.80 HKD"
     },
     {
       "id": "h-07688",
@@ -273,7 +274,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "27.16 HKD"
+      "currentPrice": "24.54 HKD"
     },
     {
       "id": "a-001237",
@@ -283,7 +284,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "61.5 CNY",
+      "currentPrice": "59.53 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -305,7 +306,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "63.71 CNY",
+      "currentPrice": "59.08 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -327,7 +328,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "68.22 CNY",
+      "currentPrice": "61.41 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -363,7 +364,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "276.00 HKD"
+      "currentPrice": "239.60 HKD"
     },
     {
       "id": "a-688635",
@@ -373,7 +374,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "485.0 CNY",
+      "currentPrice": "416.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -395,7 +396,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "39.5 CNY",
+      "currentPrice": "35.26 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -431,7 +432,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公开 IPO 资料",
-      "currentPrice": "74.10 HKD"
+      "currentPrice": "66.75 HKD"
     },
     {
       "id": "h-02723",
@@ -455,7 +456,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / etnet IPO",
-      "currentPrice": "338.60 HKD"
+      "currentPrice": "331.00 HKD"
     },
     {
       "id": "h-03310",
@@ -479,7 +480,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公司资料",
-      "currentPrice": "38.12 HKD"
+      "currentPrice": "34.48 HKD"
     },
     {
       "id": "a-920218",
@@ -489,7 +490,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "20.25 CNY",
+      "currentPrice": "20.41 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -511,7 +512,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "158.18 CNY",
+      "currentPrice": "140.66 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -533,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "59.53 CNY",
+      "currentPrice": "57.03 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -555,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "48.72 CNY",
+      "currentPrice": "44.29 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -739,7 +740,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "60.03 CNY"
+      "currentPrice": "58.95 CNY"
     },
     {
       "id": "us-frbt",
@@ -804,7 +805,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.79 CNY"
+      "currentPrice": "13.31 CNY"
     },
     {
       "id": "us-yicc",
@@ -952,7 +953,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "560.0 CNY"
+      "currentPrice": "550.0 CNY"
     },
     {
       "id": "us-alpx",
@@ -973,6 +974,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "ALPX",
       "sourceUrl": "https://stockanalysis.com/stocks/alpx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-cgcf",
+      "market": "US",
+      "code": "CGCF",
+      "name": "Cartesian Growth Corporation IV",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-25",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Peter Yu",
+      "summary": "Cartesian Growth Corporation IV（CGCF）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "CGCF",
+      "sourceUrl": "https://stockanalysis.com/stocks/cgcf/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
@@ -997,10 +1019,31 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-fwac",
+      "market": "US",
+      "code": "FWAC",
+      "name": "Futurewave Acquisition Corporation",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-06-25",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Daniel M. McCabe",
+      "summary": "Futurewave Acquisition Corporation（FWAC）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "FWAC",
+      "sourceUrl": "https://stockanalysis.com/stocks/fwac/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
       "id": "a-001399",
       "market": "A",
       "code": "001399",
-      "name": "惠科股份",
+      "name": "N惠科",
       "exchange": "深交所主板",
       "listingDate": "2026-06-26",
       "issuePrice": "10.12 CNY",
@@ -1011,11 +1054,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：冯志伟",
-      "summary": "惠科股份主要从事半导体显示面板等核心显示器件以及智能显示终端的研发、制造和销售。。主要产品或服务类型包括TV面板、IT面板、TV终端、IT及智慧物联终端。归类在A股新股板块。",
+      "summary": "N惠科主要从事半导体显示面板等核心显示器件以及智能显示终端的研发、制造和销售。。主要产品或服务类型包括TV面板、IT面板、TV终端、IT及智慧物联终端。归类在A股新股板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "49.63 CNY"
     },
     {
       "id": "us-mot",
@@ -1037,6 +1081,27 @@
       "searchCode": "MOT",
       "sourceUrl": "https://stockanalysis.com/stocks/mot/company/",
       "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "a-920072",
+      "market": "A",
+      "code": "920072",
+      "name": "科莱瑞迪",
+      "exchange": "北交所",
+      "listingDate": "2026-06-29",
+      "issuePrice": "15.62 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：詹德仁",
+      "summary": "科莱瑞迪主要从事肿瘤放射治疗中的放疗定位装置以及康复治疗中康复辅助器械的研发、生产和销售。。主要产品或服务类型包括放疗定位装置、康复辅助器械。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920072:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
     },
     {
       "id": "us-cux",
