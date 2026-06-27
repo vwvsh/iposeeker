@@ -1,12 +1,8 @@
 {
-  "updatedAt": "2026-06-26T05:07:00+00:00",
+  "updatedAt": "2026-06-27T04:59:36+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
-    "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 6 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -19,7 +15,7 @@
       "exchange": "北交所",
       "listingDate": "2026-04-27",
       "issuePrice": "20.93 CNY",
-      "currentPrice": "52.11 CNY",
+      "currentPrice": "49.82 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -41,7 +37,7 @@
       "exchange": "北交所",
       "listingDate": "2026-04-29",
       "issuePrice": "16.21 CNY",
-      "currentPrice": "83.7 CNY",
+      "currentPrice": "104.70 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -63,7 +59,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-04-30",
       "issuePrice": "13.91 CNY",
-      "currentPrice": "45.69 CNY",
+      "currentPrice": "42.96 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -85,7 +81,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-07",
       "issuePrice": "20.58 CNY",
-      "currentPrice": "40.6 CNY",
+      "currentPrice": "34.61 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -107,7 +103,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.3 CNY",
-      "currentPrice": "69.62 CNY",
+      "currentPrice": "67.01 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -129,7 +125,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.86 CNY",
-      "currentPrice": "89.72 CNY",
+      "currentPrice": "91.73 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -151,7 +147,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "51.37 CNY",
+      "currentPrice": "50.86 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -173,7 +169,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "147.35 CNY",
+      "currentPrice": "146.92 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -195,7 +191,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "37.23 CNY",
+      "currentPrice": "37.09 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -217,7 +213,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "49.18 CNY",
+      "currentPrice": "47.50 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -251,7 +247,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "93.80 HKD"
+      "currentPrice": "96.00 HKD"
     },
     {
       "id": "h-07688",
@@ -274,7 +270,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "24.54 HKD"
+      "currentPrice": "23.80 HKD"
     },
     {
       "id": "a-001237",
@@ -284,7 +280,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "59.53 CNY",
+      "currentPrice": "59.27 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -306,7 +302,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "59.08 CNY",
+      "currentPrice": "59.33 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -328,7 +324,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "61.41 CNY",
+      "currentPrice": "58.71 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -364,7 +360,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "239.60 HKD"
+      "currentPrice": "242.40 HKD"
     },
     {
       "id": "a-688635",
@@ -374,7 +370,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "416.0 CNY",
+      "currentPrice": "420.94 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +392,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "35.26 CNY",
+      "currentPrice": "34.69 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -432,7 +428,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公开 IPO 资料",
-      "currentPrice": "66.75 HKD"
+      "currentPrice": "64.35 HKD"
     },
     {
       "id": "h-02723",
@@ -456,7 +452,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / etnet IPO",
-      "currentPrice": "331.00 HKD"
+      "currentPrice": "324.20 HKD"
     },
     {
       "id": "h-03310",
@@ -480,7 +476,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公司资料",
-      "currentPrice": "34.48 HKD"
+      "currentPrice": "33.50 HKD"
     },
     {
       "id": "a-920218",
@@ -490,7 +486,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "20.41 CNY",
+      "currentPrice": "19.87 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -512,7 +508,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "140.66 CNY",
+      "currentPrice": "137.27 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +530,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "57.03 CNY",
+      "currentPrice": "53.99 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +552,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "44.29 CNY",
+      "currentPrice": "44.33 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -632,7 +628,7 @@
       "searchCode": "WHK",
       "sourceUrl": "https://stockanalysis.com/stocks/whk/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "27.13 USD"
+      "currentPrice": "26.83 USD"
     },
     {
       "id": "us-eroc",
@@ -654,7 +650,7 @@
       "searchCode": "EROC",
       "sourceUrl": "https://stockanalysis.com/stocks/eroc/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "17.92 USD"
+      "currentPrice": "13.76 USD"
     },
     {
       "id": "us-jab",
@@ -697,7 +693,7 @@
       "searchCode": "PBLS",
       "sourceUrl": "https://stockanalysis.com/stocks/pbls/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "30.31 USD"
+      "currentPrice": "28.80 USD"
     },
     {
       "id": "us-shot",
@@ -740,7 +736,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "58.95 CNY"
+      "currentPrice": "58.45 CNY"
     },
     {
       "id": "us-frbt",
@@ -762,7 +758,7 @@
       "searchCode": "FRBT",
       "sourceUrl": "https://stockanalysis.com/stocks/frbt/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "18.10 USD"
+      "currentPrice": "18.19 USD"
     },
     {
       "id": "us-spcx",
@@ -783,7 +779,8 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "SPCX",
       "sourceUrl": "https://stockanalysis.com/stocks/spcx/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
+      "sourceName": "StockAnalysis IPO Calendar",
+      "currentPrice": "153.23 USD"
     },
     {
       "id": "a-920126",
@@ -805,7 +802,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.31 CNY"
+      "currentPrice": "12.82 CNY"
     },
     {
       "id": "us-yicc",
@@ -847,7 +844,8 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "FCBM",
       "sourceUrl": "https://stockanalysis.com/stocks/fcbm/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
+      "sourceName": "StockAnalysis IPO Calendar",
+      "currentPrice": "12.75 USD"
     },
     {
       "id": "us-kard",
@@ -868,7 +866,8 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "KARD",
       "sourceUrl": "https://stockanalysis.com/stocks/kard/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
+      "sourceName": "StockAnalysis IPO Calendar",
+      "currentPrice": "23.60 USD"
     },
     {
       "id": "us-tviv",
@@ -953,7 +952,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "550.0 CNY"
+      "currentPrice": "545.07 CNY"
     },
     {
       "id": "us-alpx",
@@ -1016,7 +1015,8 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "DPC",
       "sourceUrl": "https://stockanalysis.com/stocks/dpc/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
+      "sourceName": "StockAnalysis IPO Calendar",
+      "currentPrice": "47.15 USD"
     },
     {
       "id": "us-fwac",
@@ -1043,7 +1043,7 @@
       "id": "a-001399",
       "market": "A",
       "code": "001399",
-      "name": "N惠科",
+      "name": "惠科股份",
       "exchange": "深交所主板",
       "listingDate": "2026-06-26",
       "issuePrice": "10.12 CNY",
@@ -1054,12 +1054,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：冯志伟",
-      "summary": "N惠科主要从事半导体显示面板等核心显示器件以及智能显示终端的研发、制造和销售。。主要产品或服务类型包括TV面板、IT面板、TV终端、IT及智慧物联终端。归类在A股新股板块。",
+      "summary": "惠科股份主要从事半导体显示面板等核心显示器件以及智能显示终端的研发、制造和销售。。主要产品或服务类型包括TV面板、IT面板、TV终端、IT及智慧物联终端。归类在A股新股板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "49.63 CNY"
+      "currentPrice": "42.00 CNY"
     },
     {
       "id": "us-mot",
@@ -1101,6 +1101,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
+      "id": "a-920222",
+      "market": "A",
+      "code": "920222",
+      "name": "益坤电气",
+      "exchange": "北交所",
+      "listingDate": "2026-06-30",
+      "issuePrice": "10.09 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：余燕坤",
+      "summary": "益坤电气主要从事轨道交通和电力系统领域绝缘、过电压保护设备及在线监测综合解决方案等产品的研发、生产及销售。。主要产品或服务类型包括避雷器、绝缘子、熔断器及组件、在线监测装置及系统。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920222:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据"
     },
     {
