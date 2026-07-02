@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-07-01T05:18:27+00:00",
+  "updatedAt": "2026-07-02T04:57:15+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 6 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -195,7 +194,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "43.23 CNY",
+      "currentPrice": "42.59 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -217,7 +216,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "45.4 CNY",
+      "currentPrice": "44.74 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -284,7 +283,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "74.13 CNY",
+      "currentPrice": "69.76 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -306,7 +305,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "66.96 CNY",
+      "currentPrice": "66.3 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -328,7 +327,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "55.34 CNY",
+      "currentPrice": "56.58 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -374,7 +373,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "426.0 CNY",
+      "currentPrice": "411.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +395,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "35.51 CNY",
+      "currentPrice": "34.49 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -490,7 +489,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "18.73 CNY",
+      "currentPrice": "18.52 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -512,7 +511,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "128.77 CNY",
+      "currentPrice": "129.0 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +533,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "50.7 CNY",
+      "currentPrice": "51.68 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +555,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "40.68 CNY",
+      "currentPrice": "40.23 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -740,7 +739,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "47.91 CNY"
+      "currentPrice": "47.5 CNY"
     },
     {
       "id": "us-frbt",
@@ -806,7 +805,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "12.29 CNY"
+      "currentPrice": "12.23 CNY"
     },
     {
       "id": "us-yicc",
@@ -956,7 +955,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "746.32 CNY"
+      "currentPrice": "703.0 CNY"
     },
     {
       "id": "us-alpx",
@@ -1063,7 +1062,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "44.18 CNY"
+      "currentPrice": "49.95 CNY"
     },
     {
       "id": "a-920072",
@@ -1085,7 +1084,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.02 CNY"
+      "currentPrice": "37.16 CNY"
     },
     {
       "id": "a-920222",
@@ -1107,7 +1106,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.66 CNY"
+      "currentPrice": "33.7 CNY"
     },
     {
       "id": "us-aac",
@@ -1215,6 +1214,27 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-ospr",
+      "market": "US",
+      "code": "OSPR",
+      "name": "Osprey Acquisition Corp. III",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-01",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "David Heikkinen",
+      "summary": "Osprey Acquisition Corp. III（OSPR）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "OSPR",
+      "sourceUrl": "https://stockanalysis.com/stocks/ospr/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
       "id": "us-sind",
       "market": "US",
       "code": "SIND",
@@ -1239,7 +1259,7 @@
       "id": "a-001248",
       "market": "A",
       "code": "001248",
-      "name": "华润新能源",
+      "name": "N华润",
       "exchange": "深交所主板",
       "listingDate": "2026-07-02",
       "issuePrice": "10.11 CNY",
@@ -1250,17 +1270,18 @@
         "东方财富新股"
       ],
       "ceo": "董事长：史宝峰",
-      "summary": "华润新能源主要从事投资、开发、运营和管理风力、太阳能发电站。。主要产品或服务类型包括电力。归类在A股新股板块。",
+      "summary": "N华润主要从事投资、开发、运营和管理风力、太阳能发电站。。主要产品或服务类型包括电力。归类在A股新股板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "25.18 CNY"
     },
     {
       "id": "a-920193",
       "market": "A",
       "code": "920193",
-      "name": "吉和昌",
+      "name": "N吉和昌",
       "exchange": "北交所",
       "listingDate": "2026-07-02",
       "issuePrice": "8.52 CNY",
@@ -1270,12 +1291,13 @@
         "A股",
         "东方财富新股"
       ],
-      "ceo": "董事长：董振鹏",
-      "summary": "吉和昌主要从事表面与界面处理相关特种功能性材料的研发、生产和销售。。主要产品或服务类型包括表面工程化学品、新能源电池材料、特种表面活性剂。归类在北交所板块。",
+      "ceo": "董事长：宋文超",
+      "summary": "N吉和昌主要从事表面与界面处理相关特种功能性材料的研发、生产和销售。。主要产品或服务类型包括表面工程化学品、新能源电池材料、特种表面活性剂。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "67.8 CNY"
     },
     {
       "id": "us-mot",
