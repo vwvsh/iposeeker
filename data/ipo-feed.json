@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-03T04:38:33+00:00",
+  "updatedAt": "2026-07-04T04:30:58+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 2 条。",
+    "港股现价已通过东方财富单股备用接口补充 4 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -251,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "67.00 HKD"
+      "currentPrice": "64.00 HKD"
     },
     {
       "id": "h-07688",
@@ -274,7 +274,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "24.50 HKD"
+      "currentPrice": "23.82 HKD"
     },
     {
       "id": "a-001237",
@@ -284,7 +284,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "67.23 CNY",
+      "currentPrice": "67.56 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -306,7 +306,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "62.9 CNY",
+      "currentPrice": "62.13 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -328,7 +328,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "56.88 CNY",
+      "currentPrice": "57.98 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -364,7 +364,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "218.60 HKD"
+      "currentPrice": "200.40 HKD"
     },
     {
       "id": "a-688635",
@@ -374,7 +374,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "399.99 CNY",
+      "currentPrice": "397.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +396,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "34.76 CNY",
+      "currentPrice": "34.28 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -432,7 +432,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公开 IPO 资料",
-      "currentPrice": "66.15 HKD"
+      "currentPrice": "64.00 HKD"
     },
     {
       "id": "h-02723",
@@ -490,7 +490,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "18.68 CNY",
+      "currentPrice": "18.87 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "51.7 CNY",
+      "currentPrice": "50.5 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "39.01 CNY",
+      "currentPrice": "38.38 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -740,7 +740,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "47.89 CNY"
+      "currentPrice": "47.5 CNY"
     },
     {
       "id": "us-frbt",
@@ -806,7 +806,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "12.48 CNY"
+      "currentPrice": "12.56 CNY"
     },
     {
       "id": "us-yicc",
@@ -956,7 +956,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "571.0 CNY"
+      "currentPrice": "540.1 CNY"
     },
     {
       "id": "us-alpx",
@@ -1085,7 +1085,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "35.2 CNY"
+      "currentPrice": "33.96 CNY"
     },
     {
       "id": "a-920222",
@@ -1107,7 +1107,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.36 CNY"
+      "currentPrice": "31.75 CNY"
     },
     {
       "id": "us-aac",
@@ -1276,7 +1276,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "22.36 CNY"
+      "currentPrice": "22.02 CNY"
     },
     {
       "id": "a-920193",
@@ -1298,7 +1298,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "64.99 CNY"
+      "currentPrice": "79.36 CNY"
     },
     {
       "id": "us-miac",
