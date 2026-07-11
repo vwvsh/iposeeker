@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T04:46:15+00:00",
+  "updatedAt": "2026-07-11T04:09:27+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
@@ -251,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "61.15 HKD"
+      "currentPrice": "61.75 HKD"
     },
     {
       "id": "h-07688",
@@ -274,7 +274,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "22.56 HKD"
+      "currentPrice": "23.82 HKD"
     },
     {
       "id": "a-001237",
@@ -374,7 +374,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "397.98 CNY",
+      "currentPrice": "391.0 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +396,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "30.68 CNY",
+      "currentPrice": "29.55 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -490,7 +490,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "17.06 CNY",
+      "currentPrice": "16.76 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -512,7 +512,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "148.14 CNY",
+      "currentPrice": "139.49 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "40.9 CNY",
+      "currentPrice": "39.78 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "35.16 CNY",
+      "currentPrice": "33.96 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -740,7 +740,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.91 CNY"
+      "currentPrice": "37.53 CNY"
     },
     {
       "id": "us-frbt",
@@ -806,7 +806,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "10.64 CNY"
+      "currentPrice": "10.43 CNY"
     },
     {
       "id": "us-yicc",
@@ -956,7 +956,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "479.21 CNY"
+      "currentPrice": "445.25 CNY"
     },
     {
       "id": "us-alpx",
@@ -1063,7 +1063,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.76 CNY"
+      "currentPrice": "37.03 CNY"
     },
     {
       "id": "a-920072",
@@ -1085,7 +1085,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "28.09 CNY"
+      "currentPrice": "27.2 CNY"
     },
     {
       "id": "a-920222",
@@ -1107,7 +1107,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.4 CNY"
+      "currentPrice": "25.69 CNY"
     },
     {
       "id": "us-aac",
@@ -1276,7 +1276,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "14.96 CNY"
+      "currentPrice": "14.5 CNY"
     },
     {
       "id": "a-920193",
@@ -1298,7 +1298,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "42.09 CNY"
+      "currentPrice": "39.49 CNY"
     },
     {
       "id": "us-miac",
@@ -1404,7 +1404,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.0 CNY"
+      "currentPrice": "30.2 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1447,7 +1447,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "28.18 CNY"
+      "currentPrice": "25.53 CNY"
     },
     {
       "id": "us-ccct",
@@ -1495,7 +1495,7 @@
       "id": "a-301583",
       "market": "A",
       "code": "301583",
-      "name": "N托伦斯",
+      "name": "托伦斯",
       "exchange": "深交所创业板",
       "listingDate": "2026-07-10",
       "issuePrice": "22.6 CNY",
@@ -1506,18 +1506,18 @@
         "东方财富新股"
       ],
       "ceo": "董事长：月至",
-      "summary": "N托伦斯主要从事半导体及激光设备精密零部件的研发、生产和销售。。主要产品或服务类型包括关键工艺零部件产品、工艺零部件产品、半导体结构零部件、激光设备零部件、系统组装产品及气体等。归类在创业板板块。",
+      "summary": "托伦斯主要从事半导体及激光设备精密零部件的研发、生产和销售。。主要产品或服务类型包括关键工艺零部件产品、工艺零部件产品、半导体结构零部件、激光设备零部件、系统组装产品及气体等。归类在创业板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "247.01 CNY"
+      "currentPrice": "216.7 CNY"
     },
     {
       "id": "a-920081",
       "market": "A",
       "code": "920081",
-      "name": "N欧伦",
+      "name": "欧伦电气",
       "exchange": "北交所",
       "listingDate": "2026-07-10",
       "issuePrice": "38.69 CNY",
@@ -1528,12 +1528,33 @@
         "东方财富新股"
       ],
       "ceo": "董事长：陈先勇",
-      "summary": "N欧伦主要从事围绕环境调节设备开展研发、设计、制造、销售和服务一体化业务。。主要产品或服务类型包括除湿机、移动空调、车载冰箱、热泵系列、配件。归类在北交所板块。",
+      "summary": "欧伦电气主要从事围绕环境调节设备开展研发、设计、制造、销售和服务一体化业务。。主要产品或服务类型包括除湿机、移动空调、车载冰箱、热泵系列、配件。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "50.09 CNY"
+      "currentPrice": "47.02 CNY"
+    },
+    {
+      "id": "us-samo",
+      "market": "US",
+      "code": "SAMO",
+      "name": "Samos Energy Acquisition Corporation",
+      "exchange": "NYSE",
+      "listingDate": "2026-07-10",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Jacques Tohme",
+      "summary": "Samos Energy Acquisition Corporation（SAMO）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "SAMO",
+      "sourceUrl": "https://stockanalysis.com/stocks/samo/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-skhy",
@@ -1562,7 +1583,7 @@
       "code": "TARX",
       "name": "Tarsier Pharma Ltd.",
       "exchange": "NYSE",
-      "listingDate": "2026-07-10",
+      "listingDate": "2026-07-15",
       "issuePrice": "8.00 - 10.00 USD",
       "sector": "Healthcare",
       "tags": [
