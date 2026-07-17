@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-16T04:06:21+00:00",
+  "updatedAt": "2026-07-17T03:58:07+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 4 条。",
+    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -274,7 +274,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "19.04 HKD"
+      "currentPrice": "16.60 HKD"
     },
     {
       "id": "a-001237",
@@ -512,7 +512,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "158.7 CNY",
+      "currentPrice": "147.85 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "34.7 CNY",
+      "currentPrice": "37.77 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "28.89 CNY",
+      "currentPrice": "29.67 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -735,12 +735,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：黄超亮",
-      "summary": "金戈新材为 A 股 IPO 标的，具体主营业务、产品结构和管理层信息请查看 F10 资料及公司公告。归类在北交所板块。",
+      "summary": "金戈新材主要从事功能性材料研发、生产和销售。。主要产品或服务类型包括导热粉体材料、阻燃粉体材料、吸波粉体材料、其他功能材料。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "35.69 CNY"
+      "currentPrice": "35.99 CNY"
     },
     {
       "id": "us-frbt",
@@ -806,7 +806,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "10.18 CNY"
+      "currentPrice": "10.27 CNY"
     },
     {
       "id": "us-yicc",
@@ -956,7 +956,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "358.87 CNY"
+      "currentPrice": "356.0 CNY"
     },
     {
       "id": "us-alpx",
@@ -1063,7 +1063,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.58 CNY"
+      "currentPrice": "23.99 CNY"
     },
     {
       "id": "a-920072",
@@ -1085,7 +1085,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "31.53 CNY"
+      "currentPrice": "27.74 CNY"
     },
     {
       "id": "a-920222",
@@ -1107,7 +1107,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "24.31 CNY"
+      "currentPrice": "25.36 CNY"
     },
     {
       "id": "us-aac",
@@ -1276,7 +1276,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.17 CNY"
+      "currentPrice": "13.13 CNY"
     },
     {
       "id": "a-920193",
@@ -1298,7 +1298,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "35.29 CNY"
+      "currentPrice": "36.27 CNY"
     },
     {
       "id": "us-miac",
@@ -1404,7 +1404,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "23.01 CNY"
+      "currentPrice": "24.49 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1447,7 +1447,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "21.13 CNY"
+      "currentPrice": "21.0 CNY"
     },
     {
       "id": "us-ccct",
@@ -1511,7 +1511,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "136.8 CNY"
+      "currentPrice": "150.0 CNY"
     },
     {
       "id": "a-920081",
@@ -1528,12 +1528,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：陈先勇",
-      "summary": "欧伦电气为 A 股 IPO 标的，具体主营业务、产品结构和管理层信息请查看 F10 资料及公司公告。归类在北交所板块。",
+      "summary": "欧伦电气主要从事围绕环境调节设备开展研发、设计、制造、销售和服务一体化业务。。主要产品或服务类型包括除湿机、移动空调、车载冰箱、热泵系列、配件。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.49 CNY"
+      "currentPrice": "40.57 CNY"
     },
     {
       "id": "us-samo",
@@ -1644,7 +1644,7 @@
       "id": "a-920117",
       "market": "A",
       "code": "920117",
-      "name": "N龙鑫",
+      "name": "龙鑫智能",
       "exchange": "北交所",
       "listingDate": "2026-07-16",
       "issuePrice": "17.83 CNY",
@@ -1655,12 +1655,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：莫龙兴",
-      "summary": "N龙鑫主要从事微纳米高端复合材料制备设备及自动化生产线的研发、生产、销售和服务。。主要产品或服务类型包括研磨设备、干燥设备、物料自动化生产线、配件及其他。归类在北交所板块。",
+      "summary": "龙鑫智能主要从事微纳米高端复合材料制备设备及自动化生产线的研发、生产、销售和服务。。主要产品或服务类型包括研磨设备、干燥设备、物料自动化生产线、配件及其他。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "37.07 CNY"
+      "currentPrice": "29.81 CNY"
     },
     {
       "id": "us-csqr",
@@ -1702,6 +1702,48 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "STDN",
       "sourceUrl": "https://stockanalysis.com/stocks/stdn/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-mtak",
+      "market": "US",
+      "code": "MTAK",
+      "name": "Market Technology Acquisition Corp",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-17",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Jonathan Slone",
+      "summary": "Market Technology Acquisition Corp（MTAK）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "MTAK",
+      "sourceUrl": "https://stockanalysis.com/stocks/mtak/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-nco",
+      "market": "US",
+      "code": "NCO",
+      "name": "Southern Cross Acquisition I Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-17",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Ally Tong Zhang",
+      "summary": "Southern Cross Acquisition I Corp.（NCO）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "NCO",
+      "sourceUrl": "https://stockanalysis.com/stocks/nco/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
