@@ -1,8 +1,12 @@
 {
-  "updatedAt": "2026-07-20T04:44:54+00:00",
+  "updatedAt": "2026-07-21T04:12:28+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
+    "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -247,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "58.30 HKD"
+      "currentPrice": "58.80 HKD"
     },
     {
       "id": "h-07688",
@@ -530,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "33.21 CNY",
+      "currentPrice": "33.44 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -552,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "27.28 CNY",
+      "currentPrice": "27.08 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -737,7 +741,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.74 CNY"
+      "currentPrice": "32.66 CNY"
     },
     {
       "id": "us-frbt",
@@ -803,7 +807,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "9.79 CNY"
+      "currentPrice": "9.29 CNY"
     },
     {
       "id": "us-yicc",
@@ -955,7 +959,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "314.30 CNY"
+      "currentPrice": "352.38 CNY"
     },
     {
       "id": "us-alpx",
@@ -1063,7 +1067,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "25.86 CNY"
+      "currentPrice": "25.2 CNY"
     },
     {
       "id": "a-920072",
@@ -1085,7 +1089,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "27.10 CNY"
+      "currentPrice": "26.27 CNY"
     },
     {
       "id": "a-920222",
@@ -1107,7 +1111,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "23.13 CNY"
+      "currentPrice": "22.06 CNY"
     },
     {
       "id": "us-aac",
@@ -1280,7 +1284,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "12.91 CNY"
+      "currentPrice": "12.46 CNY"
     },
     {
       "id": "a-920193",
@@ -1302,7 +1306,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.00 CNY"
+      "currentPrice": "32.05 CNY"
     },
     {
       "id": "us-miac",
@@ -1408,7 +1412,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "23.70 CNY"
+      "currentPrice": "27.67 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1451,7 +1455,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.11 CNY"
+      "currentPrice": "19.99 CNY"
     },
     {
       "id": "us-ccct",
@@ -1515,7 +1519,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "119.50 CNY"
+      "currentPrice": "132.26 CNY"
     },
     {
       "id": "a-920081",
@@ -1537,7 +1541,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.70 CNY"
+      "currentPrice": "38.37 CNY"
     },
     {
       "id": "us-samo",
@@ -1665,7 +1669,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.02 CNY"
+      "currentPrice": "27.31 CNY"
     },
     {
       "id": "us-csqr",
@@ -1757,7 +1761,7 @@
       "id": "a-688806",
       "market": "A",
       "code": "688806",
-      "name": "泰诺麦博",
+      "name": "N泰诺-U",
       "exchange": "上交所科创板",
       "listingDate": "2026-07-21",
       "issuePrice": "14.46 CNY",
@@ -1768,11 +1772,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：向松祚",
-      "summary": "泰诺麦博主要从事全人源抗体药物的开发、生产和销售。。主要产品或服务类型包括斯泰度塔单抗注射液、TNM001、其他产品。归类在科创板板块。",
+      "summary": "N泰诺-U主要从事全人源抗体药物的开发、生产和销售。。主要产品或服务类型包括斯泰度塔单抗注射液、TNM001、其他产品。归类在科创板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "39.0 CNY"
     },
     {
       "id": "us-nco",
@@ -1793,6 +1798,90 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "NCO",
       "sourceUrl": "https://stockanalysis.com/stocks/nco/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "a-920079",
+      "market": "A",
+      "code": "920079",
+      "name": "乔路铭",
+      "exchange": "北交所",
+      "listingDate": "2026-07-22",
+      "issuePrice": "14.36 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：黄胜全",
+      "summary": "乔路铭主要从事汽车饰件的研发、生产和销售。。主要产品或服务类型包括汽车内饰件、汽车外饰件及配套模具。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920079:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
+      "id": "us-sctx",
+      "market": "US",
+      "code": "SCTX",
+      "name": "Scribe Therapeutics Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-24",
+      "issuePrice": "- USD",
+      "sector": "Healthcare",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Benjamin L. Oakes, Ph.D.",
+      "summary": "该公司业务与医疗健康、生命科学或药物研发相关，具体产品线以公司披露资料为准。归类在Healthcare板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "SCTX",
+      "sourceUrl": "https://stockanalysis.com/stocks/sctx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-jmke",
+      "market": "US",
+      "code": "JMKE",
+      "name": "Jersey Mike’s Subs Inc.",
+      "exchange": "NYSE",
+      "listingDate": "2026-07-30",
+      "issuePrice": "21.00 - 25.00 USD",
+      "sector": "Consumer Discretionary",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Charles R. Morrison",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Consumer Discretionary板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "JMKE",
+      "sourceUrl": "https://stockanalysis.com/stocks/jmke/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-ref",
+      "market": "US",
+      "code": "REF",
+      "name": "Reformation Inc.",
+      "exchange": "NYSE",
+      "listingDate": "2026-07-30",
+      "issuePrice": "15.00 - 17.00 USD",
+      "sector": "Consumer Discretionary",
+      "tags": [
+        "Stock Lists",
+        "NYSE",
+        "美股"
+      ],
+      "ceo": "Hali Borenstein",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Consumer Discretionary板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "REF",
+      "sourceUrl": "https://stockanalysis.com/stocks/ref/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
