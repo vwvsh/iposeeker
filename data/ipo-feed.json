@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T04:12:28+00:00",
+  "updatedAt": "2026-07-22T04:14:14+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
@@ -251,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "58.80 HKD"
+      "currentPrice": "59.55 HKD"
     },
     {
       "id": "h-07688",
@@ -534,7 +534,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "33.44 CNY",
+      "currentPrice": "32.93 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +556,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "27.08 CNY",
+      "currentPrice": "27.5 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -741,7 +741,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.66 CNY"
+      "currentPrice": "33.63 CNY"
     },
     {
       "id": "us-frbt",
@@ -807,7 +807,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "9.29 CNY"
+      "currentPrice": "9.88 CNY"
     },
     {
       "id": "us-yicc",
@@ -959,7 +959,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "352.38 CNY"
+      "currentPrice": "390.97 CNY"
     },
     {
       "id": "us-alpx",
@@ -1067,7 +1067,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "25.2 CNY"
+      "currentPrice": "26.59 CNY"
     },
     {
       "id": "a-920072",
@@ -1089,7 +1089,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.27 CNY"
+      "currentPrice": "28.73 CNY"
     },
     {
       "id": "a-920222",
@@ -1111,7 +1111,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "22.06 CNY"
+      "currentPrice": "22.5 CNY"
     },
     {
       "id": "us-aac",
@@ -1284,7 +1284,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "12.46 CNY"
+      "currentPrice": "13.29 CNY"
     },
     {
       "id": "a-920193",
@@ -1306,7 +1306,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.05 CNY"
+      "currentPrice": "31.04 CNY"
     },
     {
       "id": "us-miac",
@@ -1412,7 +1412,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "27.67 CNY"
+      "currentPrice": "26.2 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1455,7 +1455,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "19.99 CNY"
+      "currentPrice": "20.0 CNY"
     },
     {
       "id": "us-ccct",
@@ -1519,7 +1519,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "132.26 CNY"
+      "currentPrice": "158.71 CNY"
     },
     {
       "id": "a-920081",
@@ -1541,7 +1541,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.37 CNY"
+      "currentPrice": "38.27 CNY"
     },
     {
       "id": "us-samo",
@@ -1669,7 +1669,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "27.31 CNY"
+      "currentPrice": "26.14 CNY"
     },
     {
       "id": "us-csqr",
@@ -1761,7 +1761,7 @@
       "id": "a-688806",
       "market": "A",
       "code": "688806",
-      "name": "N泰诺-U",
+      "name": "泰诺麦博",
       "exchange": "上交所科创板",
       "listingDate": "2026-07-21",
       "issuePrice": "14.46 CNY",
@@ -1772,12 +1772,33 @@
         "东方财富新股"
       ],
       "ceo": "董事长：向松祚",
-      "summary": "N泰诺-U主要从事全人源抗体药物的开发、生产和销售。。主要产品或服务类型包括斯泰度塔单抗注射液、TNM001、其他产品。归类在科创板板块。",
+      "summary": "泰诺麦博主要从事全人源抗体药物的开发、生产和销售。。主要产品或服务类型包括斯泰度塔单抗注射液、TNM001、其他产品。归类在科创板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.0 CNY"
+      "currentPrice": "37.0 CNY"
+    },
+    {
+      "id": "us-brtm",
+      "market": "US",
+      "code": "BRTM",
+      "name": "B&R Technology Merger Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-21",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "David York",
+      "summary": "B&R Technology Merger Corp.（BRTM）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "BRTM",
+      "sourceUrl": "https://stockanalysis.com/stocks/brtm/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
     },
     {
       "id": "us-nco",
@@ -1804,7 +1825,7 @@
       "id": "a-920079",
       "market": "A",
       "code": "920079",
-      "name": "乔路铭",
+      "name": "N乔路铭",
       "exchange": "北交所",
       "listingDate": "2026-07-22",
       "issuePrice": "14.36 CNY",
@@ -1815,11 +1836,12 @@
         "东方财富新股"
       ],
       "ceo": "董事长：黄胜全",
-      "summary": "乔路铭主要从事汽车饰件的研发、生产和销售。。主要产品或服务类型包括汽车内饰件、汽车外饰件及配套模具。归类在北交所板块。",
+      "summary": "N乔路铭主要从事汽车饰件的研发、生产和销售。。主要产品或服务类型包括汽车内饰件、汽车外饰件及配套模具。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "19.76 CNY"
     },
     {
       "id": "us-sctx",
@@ -1828,7 +1850,7 @@
       "name": "Scribe Therapeutics Inc.",
       "exchange": "NASDAQ",
       "listingDate": "2026-07-24",
-      "issuePrice": "- USD",
+      "issuePrice": "13.00 - 15.00 USD",
       "sector": "Healthcare",
       "tags": [
         "Stock Lists",
