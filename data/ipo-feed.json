@@ -1,12 +1,8 @@
 {
-  "updatedAt": "2026-07-22T04:14:14+00:00",
+  "updatedAt": "2026-07-23T04:24:20+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
-    "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -19,7 +15,7 @@
       "exchange": "北交所",
       "listingDate": "2026-04-27",
       "issuePrice": "20.93 CNY",
-      "currentPrice": "39.80 CNY",
+      "currentPrice": "38.17 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -41,7 +37,7 @@
       "exchange": "北交所",
       "listingDate": "2026-04-29",
       "issuePrice": "16.21 CNY",
-      "currentPrice": "79.79 CNY",
+      "currentPrice": "75.56 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -63,7 +59,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-04-30",
       "issuePrice": "13.91 CNY",
-      "currentPrice": "32.51 CNY",
+      "currentPrice": "33.48 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -85,7 +81,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-07",
       "issuePrice": "20.58 CNY",
-      "currentPrice": "26.17 CNY",
+      "currentPrice": "26.79 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -107,7 +103,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.3 CNY",
-      "currentPrice": "45.19 CNY",
+      "currentPrice": "49.68 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -129,7 +125,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-11",
       "issuePrice": "13.86 CNY",
-      "currentPrice": "53.77 CNY",
+      "currentPrice": "64.68 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -151,7 +147,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-15",
       "issuePrice": "30.38 CNY",
-      "currentPrice": "42.27 CNY",
+      "currentPrice": "43.56 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -173,7 +169,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-15",
       "issuePrice": "29.47 CNY",
-      "currentPrice": "99.67 CNY",
+      "currentPrice": "97.50 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -195,7 +191,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-18",
       "issuePrice": "27.19 CNY",
-      "currentPrice": "38.72 CNY",
+      "currentPrice": "38.22 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -217,7 +213,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-18",
       "issuePrice": "14.43 CNY",
-      "currentPrice": "36.06 CNY",
+      "currentPrice": "34.35 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -251,7 +247,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "59.55 HKD"
+      "currentPrice": "59.65 HKD"
     },
     {
       "id": "h-07688",
@@ -274,7 +270,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "14.33 HKD"
+      "currentPrice": "13.58 HKD"
     },
     {
       "id": "a-001237",
@@ -284,7 +280,7 @@
       "exchange": "深交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "53.26 CNY",
-      "currentPrice": "53.78 CNY",
+      "currentPrice": "52.77 CNY",
       "sector": "A股新股",
       "tags": [
         "深交所主板",
@@ -306,7 +302,7 @@
       "exchange": "上交所主板",
       "listingDate": "2026-05-22",
       "issuePrice": "15.76 CNY",
-      "currentPrice": "42.65 CNY",
+      "currentPrice": "46.56 CNY",
       "sector": "A股新股",
       "tags": [
         "上交所主板",
@@ -328,7 +324,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-22",
       "issuePrice": "28.29 CNY",
-      "currentPrice": "40.97 CNY",
+      "currentPrice": "40.66 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -364,7 +360,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "175.70 HKD"
+      "currentPrice": "167.80 HKD"
     },
     {
       "id": "a-688635",
@@ -374,7 +370,7 @@
       "exchange": "上交所科创板",
       "listingDate": "2026-05-27",
       "issuePrice": "40.98 CNY",
-      "currentPrice": "268.03 CNY",
+      "currentPrice": "259.17 CNY",
       "sector": "科创板",
       "tags": [
         "上交所科创板",
@@ -396,7 +392,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-27",
       "issuePrice": "9.21 CNY",
-      "currentPrice": "23.44 CNY",
+      "currentPrice": "24.62 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -432,7 +428,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公开 IPO 资料",
-      "currentPrice": "56.30 HKD"
+      "currentPrice": "61.10 HKD"
     },
     {
       "id": "h-02723",
@@ -456,7 +452,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / etnet IPO",
-      "currentPrice": "538.50 HKD"
+      "currentPrice": "552.50 HKD"
     },
     {
       "id": "h-03310",
@@ -480,7 +476,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 公司资料",
-      "currentPrice": "29.80 HKD"
+      "currentPrice": "27.14 HKD"
     },
     {
       "id": "a-920218",
@@ -490,7 +486,7 @@
       "exchange": "北交所",
       "listingDate": "2026-05-29",
       "issuePrice": "12.19 CNY",
-      "currentPrice": "16.21 CNY",
+      "currentPrice": "17.00 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -512,7 +508,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-05",
       "issuePrice": "25.19 CNY",
-      "currentPrice": "142.80 CNY",
+      "currentPrice": "106.96 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -534,7 +530,7 @@
       "exchange": "北交所",
       "listingDate": "2026-06-08",
       "issuePrice": "30.28 CNY",
-      "currentPrice": "32.93 CNY",
+      "currentPrice": "34.10 CNY",
       "sector": "北交所",
       "tags": [
         "北交所",
@@ -556,7 +552,7 @@
       "exchange": "深交所创业板",
       "listingDate": "2026-06-09",
       "issuePrice": "7.08 CNY",
-      "currentPrice": "27.5 CNY",
+      "currentPrice": "30.99 CNY",
       "sector": "创业板",
       "tags": [
         "深交所创业板",
@@ -632,7 +628,7 @@
       "searchCode": "WHK",
       "sourceUrl": "https://stockanalysis.com/stocks/whk/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "25.73 USD"
+      "currentPrice": "26.54 USD"
     },
     {
       "id": "us-eroc",
@@ -654,7 +650,7 @@
       "searchCode": "EROC",
       "sourceUrl": "https://stockanalysis.com/stocks/eroc/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "10.81 USD"
+      "currentPrice": "12.32 USD"
     },
     {
       "id": "us-jab",
@@ -697,7 +693,7 @@
       "searchCode": "PBLS",
       "sourceUrl": "https://stockanalysis.com/stocks/pbls/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "29.55 USD"
+      "currentPrice": "30.81 USD"
     },
     {
       "id": "us-shot",
@@ -719,7 +715,7 @@
       "searchCode": "SHOT",
       "sourceUrl": "https://stockanalysis.com/stocks/shot/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "9.82 USD"
+      "currentPrice": "9.83 USD"
     },
     {
       "id": "a-920083",
@@ -741,7 +737,7 @@
       "searchCode": "920083:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920083&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "33.63 CNY"
+      "currentPrice": "34.86 CNY"
     },
     {
       "id": "us-frbt",
@@ -763,7 +759,7 @@
       "searchCode": "FRBT",
       "sourceUrl": "https://stockanalysis.com/stocks/frbt/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "19.05 USD"
+      "currentPrice": "19.38 USD"
     },
     {
       "id": "us-spcx",
@@ -785,7 +781,7 @@
       "searchCode": "SPCX",
       "sourceUrl": "https://stockanalysis.com/stocks/spcx/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "123.99 USD"
+      "currentPrice": "115.26 USD"
     },
     {
       "id": "a-920126",
@@ -807,7 +803,7 @@
       "searchCode": "920126:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920126&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "9.88 CNY"
+      "currentPrice": "9.86 CNY"
     },
     {
       "id": "us-yicc",
@@ -851,7 +847,7 @@
       "searchCode": "FCBM",
       "sourceUrl": "https://stockanalysis.com/stocks/fcbm/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "12.85 USD"
+      "currentPrice": "12.76 USD"
     },
     {
       "id": "us-kard",
@@ -873,7 +869,7 @@
       "searchCode": "KARD",
       "sourceUrl": "https://stockanalysis.com/stocks/kard/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "21.13 USD"
+      "currentPrice": "22.86 USD"
     },
     {
       "id": "us-tviv",
@@ -895,7 +891,7 @@
       "searchCode": "TVIV",
       "sourceUrl": "https://stockanalysis.com/stocks/tviv/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "9.93 USD"
+      "currentPrice": "9.95 USD"
     },
     {
       "id": "us-wlco",
@@ -959,7 +955,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "390.97 CNY"
+      "currentPrice": "357.89 CNY"
     },
     {
       "id": "us-alpx",
@@ -981,7 +977,7 @@
       "searchCode": "ALPX",
       "sourceUrl": "https://stockanalysis.com/stocks/alpx/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "9.86 USD"
+      "currentPrice": "9.87 USD"
     },
     {
       "id": "us-cgcf",
@@ -1024,7 +1020,7 @@
       "searchCode": "DPC",
       "sourceUrl": "https://stockanalysis.com/stocks/dpc/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "46.27 USD"
+      "currentPrice": "46.89 USD"
     },
     {
       "id": "us-fwac",
@@ -1067,7 +1063,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.59 CNY"
+      "currentPrice": "25.45 CNY"
     },
     {
       "id": "a-920072",
@@ -1089,7 +1085,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "28.73 CNY"
+      "currentPrice": "28.79 CNY"
     },
     {
       "id": "a-920222",
@@ -1111,7 +1107,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "22.5 CNY"
+      "currentPrice": "27.91 CNY"
     },
     {
       "id": "us-aac",
@@ -1154,7 +1150,7 @@
       "searchCode": "BSP",
       "sourceUrl": "https://stockanalysis.com/stocks/bsp/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "32.40 USD"
+      "currentPrice": "33.78 USD"
     },
     {
       "id": "us-cux",
@@ -1197,7 +1193,7 @@
       "searchCode": "ITG",
       "sourceUrl": "https://stockanalysis.com/stocks/itg/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "12.14 USD"
+      "currentPrice": "13.41 USD"
     },
     {
       "id": "us-lime",
@@ -1219,7 +1215,7 @@
       "searchCode": "LIME",
       "sourceUrl": "https://stockanalysis.com/stocks/lime/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "26.21 USD"
+      "currentPrice": "26.28 USD"
     },
     {
       "id": "us-ospr",
@@ -1262,7 +1258,7 @@
       "searchCode": "SIND",
       "sourceUrl": "https://stockanalysis.com/stocks/sind/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "13.63 USD"
+      "currentPrice": "14.61 USD"
     },
     {
       "id": "a-001248",
@@ -1284,7 +1280,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.29 CNY"
+      "currentPrice": "13.61 CNY"
     },
     {
       "id": "a-920193",
@@ -1306,7 +1302,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "31.04 CNY"
+      "currentPrice": "33.39 CNY"
     },
     {
       "id": "us-miac",
@@ -1369,7 +1365,8 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "VII",
       "sourceUrl": "https://stockanalysis.com/stocks/vii/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
+      "sourceName": "StockAnalysis IPO Calendar",
+      "currentPrice": "9.81 USD"
     },
     {
       "id": "us-bccq",
@@ -1412,7 +1409,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.2 CNY"
+      "currentPrice": "24.43 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1455,7 +1452,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.0 CNY"
+      "currentPrice": "20.14 CNY"
     },
     {
       "id": "us-ccct",
@@ -1519,7 +1516,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "158.71 CNY"
+      "currentPrice": "148.86 CNY"
     },
     {
       "id": "a-920081",
@@ -1541,7 +1538,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.27 CNY"
+      "currentPrice": "38.22 CNY"
     },
     {
       "id": "us-samo",
@@ -1584,7 +1581,7 @@
       "searchCode": "SKHY",
       "sourceUrl": "https://stockanalysis.com/stocks/skhy/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "154.03 USD"
+      "currentPrice": "165.27 USD"
     },
     {
       "id": "us-jone",
@@ -1669,7 +1666,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.14 CNY"
+      "currentPrice": "26.19 CNY"
     },
     {
       "id": "us-csqr",
@@ -1691,7 +1688,7 @@
       "searchCode": "CSQR",
       "sourceUrl": "https://stockanalysis.com/stocks/csqr/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "20.40 USD"
+      "currentPrice": "21.57 USD"
     },
     {
       "id": "us-stdn",
@@ -1713,7 +1710,7 @@
       "searchCode": "STDN",
       "sourceUrl": "https://stockanalysis.com/stocks/stdn/company/",
       "sourceName": "StockAnalysis IPO Calendar",
-      "currentPrice": "10.40 USD"
+      "currentPrice": "9.65 USD"
     },
     {
       "id": "us-amac",
@@ -1777,7 +1774,7 @@
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "37.0 CNY"
+      "currentPrice": "29.69 CNY"
     },
     {
       "id": "us-brtm",
@@ -1825,7 +1822,7 @@
       "id": "a-920079",
       "market": "A",
       "code": "920079",
-      "name": "N乔路铭",
+      "name": "乔路铭",
       "exchange": "北交所",
       "listingDate": "2026-07-22",
       "issuePrice": "14.36 CNY",
@@ -1836,12 +1833,33 @@
         "东方财富新股"
       ],
       "ceo": "董事长：黄胜全",
-      "summary": "N乔路铭主要从事汽车饰件的研发、生产和销售。。主要产品或服务类型包括汽车内饰件、汽车外饰件及配套模具。归类在北交所板块。",
+      "summary": "乔路铭主要从事汽车饰件的研发、生产和销售。。主要产品或服务类型包括汽车内饰件、汽车外饰件及配套模具。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "19.76 CNY"
+      "currentPrice": "15.82 CNY"
+    },
+    {
+      "id": "a-920238",
+      "market": "A",
+      "code": "920238",
+      "name": "长鹰硬科",
+      "exchange": "北交所",
+      "listingDate": "2026-07-24",
+      "issuePrice": "18.89 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：邓福铭",
+      "summary": "长鹰硬科主要从事硬质合金产品的研发、生产和销售。。主要产品或服务类型包括硬质合金、硬质合金工具。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920238:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920238&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
     },
     {
       "id": "us-sctx",
