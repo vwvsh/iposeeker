@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-07-31T04:21:47+00:00",
+  "updatedAt": "2026-08-01T04:18:41+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 3 条。",
+    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -251,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "59.00 HKD"
+      "currentPrice": "58.45 HKD"
     },
     {
       "id": "h-07688",
@@ -959,7 +959,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "327.99 CNY"
+      "currentPrice": "312.1 CNY"
     },
     {
       "id": "us-alpx",
@@ -1067,7 +1067,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "23.05 CNY"
+      "currentPrice": "22.72 CNY"
     },
     {
       "id": "a-920072",
@@ -1089,7 +1089,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.99 CNY"
+      "currentPrice": "26.05 CNY"
     },
     {
       "id": "a-920222",
@@ -1111,7 +1111,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "24.77 CNY"
+      "currentPrice": "25.0 CNY"
     },
     {
       "id": "us-aac",
@@ -1284,7 +1284,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.32 CNY"
+      "currentPrice": "13.18 CNY"
     },
     {
       "id": "a-920193",
@@ -1306,7 +1306,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "30.55 CNY"
+      "currentPrice": "29.71 CNY"
     },
     {
       "id": "us-miac",
@@ -1413,7 +1413,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "22.04 CNY"
+      "currentPrice": "21.24 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1456,7 +1456,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.34 CNY"
+      "currentPrice": "20.29 CNY"
     },
     {
       "id": "us-ccct",
@@ -1520,7 +1520,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "163.7 CNY"
+      "currentPrice": "149.6 CNY"
     },
     {
       "id": "a-920081",
@@ -1542,7 +1542,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.91 CNY"
+      "currentPrice": "39.56 CNY"
     },
     {
       "id": "us-samo",
@@ -1649,7 +1649,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.1 CNY"
+      "currentPrice": "25.95 CNY"
     },
     {
       "id": "us-csqr",
@@ -1736,7 +1736,7 @@
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "24.88 CNY"
+      "currentPrice": "24.92 CNY"
     },
     {
       "id": "us-brtm",
@@ -1800,7 +1800,7 @@
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "15.15 CNY"
+      "currentPrice": "14.88 CNY"
     },
     {
       "id": "a-920238",
@@ -1822,7 +1822,7 @@
       "searchCode": "920238:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920238&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "73.28 CNY"
+      "currentPrice": "73.08 CNY"
     },
     {
       "id": "us-mtak",
@@ -1908,7 +1908,7 @@
       "searchCode": "688825:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688825&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "57.6 CNY"
+      "currentPrice": "53.97 CNY"
     },
     {
       "id": "a-920176",
@@ -1930,7 +1930,7 @@
       "searchCode": "920176:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920176&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "68.63 CNY"
+      "currentPrice": "66.0 CNY"
     },
     {
       "id": "us-catl",
@@ -1995,7 +1995,7 @@
       "searchCode": "920065:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920065&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "41.38 CNY"
+      "currentPrice": "39.71 CNY"
     },
     {
       "id": "a-301677",
@@ -2017,28 +2017,7 @@
       "searchCode": "301677:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301677&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "96.3 CNY"
-    },
-    {
-      "id": "us-ewav",
-      "market": "US",
-      "code": "EWAV",
-      "name": "East West Ave Acquisition Corp.",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-07-30",
-      "issuePrice": "10.00 USD",
-      "sector": "Financials",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Molly Huang",
-      "summary": "East West Ave Acquisition Corp.（EWAV）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "EWAV",
-      "sourceUrl": "https://stockanalysis.com/stocks/ewav/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
+      "currentPrice": "88.02 CNY"
     },
     {
       "id": "us-jmke",
@@ -2104,6 +2083,27 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-ewav",
+      "market": "US",
+      "code": "EWAV",
+      "name": "East West Ave Acquisition Corp.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-31",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Molly Huang",
+      "summary": "East West Ave Acquisition Corp.（EWAV）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "EWAV",
+      "sourceUrl": "https://stockanalysis.com/stocks/ewav/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
       "id": "us-tp",
       "market": "US",
       "code": "TP",
@@ -2122,6 +2122,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "TP",
       "sourceUrl": "https://stockanalysis.com/stocks/tp/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-xiii",
+      "market": "US",
+      "code": "XIII",
+      "name": "Churchill Capital Corp XIII",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-07-31",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Michael Klein",
+      "summary": "Churchill Capital Corp XIII（XIII）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "XIII",
+      "sourceUrl": "https://stockanalysis.com/stocks/xiii/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
@@ -2164,6 +2185,48 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "ATTO",
       "sourceUrl": "https://stockanalysis.com/stocks/atto/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-brve",
+      "market": "US",
+      "code": "BRVE",
+      "name": "Braveheart Bio, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-08-06",
+      "issuePrice": "15.00 - 17.00 USD",
+      "sector": "Healthcare",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Travis Murdoch",
+      "summary": "该公司业务与医疗健康、生命科学或药物研发相关，具体产品线以公司披露资料为准。归类在Healthcare板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "BRVE",
+      "sourceUrl": "https://stockanalysis.com/stocks/brve/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-vogx",
+      "market": "US",
+      "code": "VOGX",
+      "name": "Vogenx, Inc.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-08-06",
+      "issuePrice": "11.00 - 13.00 USD",
+      "sector": "Healthcare",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "James Green",
+      "summary": "该公司业务与医疗健康、生命科学或药物研发相关，具体产品线以公司披露资料为准。归类在Healthcare板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "VOGX",
+      "sourceUrl": "https://stockanalysis.com/stocks/vogx/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
