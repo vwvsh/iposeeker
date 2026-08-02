@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T04:18:41+00:00",
+  "updatedAt": "2026-08-02T04:21:22+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
@@ -2206,6 +2206,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "BRVE",
       "sourceUrl": "https://stockanalysis.com/stocks/brve/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-oclt",
+      "market": "US",
+      "code": "OCLT",
+      "name": "OceanLight Acquisition Corporation",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-08-06",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Ping Zhang",
+      "summary": "OceanLight Acquisition Corporation（OCLT）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "OCLT",
+      "sourceUrl": "https://stockanalysis.com/stocks/oclt/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
