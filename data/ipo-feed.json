@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-02T04:21:22+00:00",
+  "updatedAt": "2026-08-03T04:26:49+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 1 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -959,7 +958,7 @@
       "searchCode": "688797:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688797&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "312.1 CNY"
+      "currentPrice": "293.12 CNY"
     },
     {
       "id": "us-alpx",
@@ -1067,7 +1066,7 @@
       "searchCode": "001399:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001399&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "22.72 CNY"
+      "currentPrice": "22.53 CNY"
     },
     {
       "id": "a-920072",
@@ -1089,7 +1088,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.05 CNY"
+      "currentPrice": "26.2 CNY"
     },
     {
       "id": "a-920222",
@@ -1111,7 +1110,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "25.0 CNY"
+      "currentPrice": "28.38 CNY"
     },
     {
       "id": "us-aac",
@@ -1284,7 +1283,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.18 CNY"
+      "currentPrice": "13.33 CNY"
     },
     {
       "id": "a-920193",
@@ -1306,7 +1305,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "29.71 CNY"
+      "currentPrice": "31.1 CNY"
     },
     {
       "id": "us-miac",
@@ -1413,7 +1412,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "21.24 CNY"
+      "currentPrice": "20.84 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1520,7 +1519,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "149.6 CNY"
+      "currentPrice": "150.55 CNY"
     },
     {
       "id": "a-920081",
@@ -1542,7 +1541,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.56 CNY"
+      "currentPrice": "39.55 CNY"
     },
     {
       "id": "us-samo",
@@ -1649,7 +1648,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "25.95 CNY"
+      "currentPrice": "26.08 CNY"
     },
     {
       "id": "us-csqr",
@@ -1736,7 +1735,7 @@
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "24.92 CNY"
+      "currentPrice": "23.68 CNY"
     },
     {
       "id": "us-brtm",
@@ -1800,7 +1799,7 @@
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "14.88 CNY"
+      "currentPrice": "14.83 CNY"
     },
     {
       "id": "a-920238",
@@ -1822,7 +1821,7 @@
       "searchCode": "920238:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920238&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "73.08 CNY"
+      "currentPrice": "79.66 CNY"
     },
     {
       "id": "us-mtak",
@@ -1908,7 +1907,7 @@
       "searchCode": "688825:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688825&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "53.97 CNY"
+      "currentPrice": "55.43 CNY"
     },
     {
       "id": "a-920176",
@@ -1930,7 +1929,7 @@
       "searchCode": "920176:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920176&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "66.0 CNY"
+      "currentPrice": "68.31 CNY"
     },
     {
       "id": "us-catl",
@@ -1995,7 +1994,7 @@
       "searchCode": "920065:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920065&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.71 CNY"
+      "currentPrice": "39.22 CNY"
     },
     {
       "id": "a-301677",
@@ -2017,7 +2016,7 @@
       "searchCode": "301677:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301677&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "88.02 CNY"
+      "currentPrice": "76.7 CNY"
     },
     {
       "id": "us-jmke",
@@ -2149,7 +2148,7 @@
       "id": "a-920258",
       "market": "A",
       "code": "920258",
-      "name": "聚仁新材",
+      "name": "N聚仁",
       "exchange": "北交所",
       "listingDate": "2026-08-03",
       "issuePrice": "4.48 CNY",
@@ -2160,10 +2159,32 @@
         "东方财富新股"
       ],
       "ceo": "董事长：王函宇",
-      "summary": "聚仁新材主要从事己内酯系列产品的研发、生产和销售。。主要产品包括己内酯、聚己内酯、聚己内酯多元醇、特种己内酯改性材料。归类在北交所板块。",
+      "summary": "N聚仁主要从事己内酯系列产品的研发、生产和销售。。主要产品包括己内酯、聚己内酯、聚己内酯多元醇、特种己内酯改性材料。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920258:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920258&type=web",
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "16.71 CNY"
+    },
+    {
+      "id": "a-001232",
+      "market": "A",
+      "code": "001232",
+      "name": "嘉立创",
+      "exchange": "深交所主板",
+      "listingDate": "2026-08-04",
+      "issuePrice": "84.46 CNY",
+      "sector": "A股新股",
+      "tags": [
+        "深交所主板",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：程一木",
+      "summary": "嘉立创主要从事提供覆盖EDA/CAM工业软件、印制电路板制造、电子元器件购销及电子装联等全产业链一体化服务。。主要产品或服务类型包括印制电路板业务、电子元器件业务、电子装联业务、电子产业配套服务、机械产业服务。归类在A股新股板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "001232:SHE",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001232&type=web",
       "sourceName": "东方财富F10 / 新股数据"
     },
     {
