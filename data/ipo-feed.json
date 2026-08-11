@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-10T03:10:12+00:00",
+  "updatedAt": "2026-08-11T03:05:27+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 2 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -1092,7 +1091,7 @@
       "searchCode": "920072:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920072&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "28.38 CNY"
+      "currentPrice": "28.33 CNY"
     },
     {
       "id": "a-920222",
@@ -1114,7 +1113,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "30.08 CNY"
+      "currentPrice": "28.9 CNY"
     },
     {
       "id": "us-aac",
@@ -1287,7 +1286,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.17 CNY"
+      "currentPrice": "13.2 CNY"
     },
     {
       "id": "a-920193",
@@ -1309,7 +1308,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "36.19 CNY"
+      "currentPrice": "34.28 CNY"
     },
     {
       "id": "us-miac",
@@ -1417,7 +1416,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "22.09 CNY"
+      "currentPrice": "21.41 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1461,7 +1460,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "21.43 CNY"
+      "currentPrice": "21.15 CNY"
     },
     {
       "id": "us-ccct",
@@ -1526,7 +1525,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "166.49 CNY"
+      "currentPrice": "173.4 CNY"
     },
     {
       "id": "a-920081",
@@ -1548,7 +1547,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "40.35 CNY"
+      "currentPrice": "39.99 CNY"
     },
     {
       "id": "us-samo",
@@ -1655,7 +1654,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "35.88 CNY"
+      "currentPrice": "36.39 CNY"
     },
     {
       "id": "us-csqr",
@@ -1742,7 +1741,7 @@
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "28.31 CNY"
+      "currentPrice": "27.99 CNY"
     },
     {
       "id": "us-brtm",
@@ -1807,7 +1806,7 @@
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "14.82 CNY"
+      "currentPrice": "14.57 CNY"
     },
     {
       "id": "a-920238",
@@ -1829,7 +1828,7 @@
       "searchCode": "920238:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920238&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "72.0 CNY"
+      "currentPrice": "70.8 CNY"
     },
     {
       "id": "us-mtak",
@@ -1915,7 +1914,7 @@
       "searchCode": "688825:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688825&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "50.31 CNY"
+      "currentPrice": "50.95 CNY"
     },
     {
       "id": "a-920176",
@@ -1937,7 +1936,7 @@
       "searchCode": "920176:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920176&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "82.67 CNY"
+      "currentPrice": "72.68 CNY"
     },
     {
       "id": "us-catl",
@@ -2002,7 +2001,7 @@
       "searchCode": "920065:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920065&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "37.8 CNY"
+      "currentPrice": "37.4 CNY"
     },
     {
       "id": "a-301677",
@@ -2024,7 +2023,7 @@
       "searchCode": "301677:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301677&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "64.35 CNY"
+      "currentPrice": "62.99 CNY"
     },
     {
       "id": "us-jmke",
@@ -2175,7 +2174,7 @@
       "searchCode": "920258:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920258&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.37 CNY"
+      "currentPrice": "12.91 CNY"
     },
     {
       "id": "a-001232",
@@ -2197,7 +2196,7 @@
       "searchCode": "001232:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001232&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "181.38 CNY"
+      "currentPrice": "174.35 CNY"
     },
     {
       "id": "us-fjdi",
@@ -2261,7 +2260,7 @@
       "searchCode": "920038:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920038&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "45.93 CNY"
+      "currentPrice": "42.78 CNY"
     },
     {
       "id": "us-atto",
@@ -2304,7 +2303,7 @@
       "searchCode": "603468:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH603468&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "29.28 CNY"
+      "currentPrice": "28.18 CNY"
     },
     {
       "id": "us-brve",
@@ -2347,7 +2346,7 @@
       "searchCode": "301707:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301707&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "108.97 CNY"
+      "currentPrice": "100.5 CNY"
     },
     {
       "id": "us-blsm",
@@ -2458,7 +2457,7 @@
       "id": "a-301717",
       "market": "A",
       "code": "301717",
-      "name": "超纯应材",
+      "name": "N超纯",
       "exchange": "深交所创业板",
       "listingDate": "2026-08-11",
       "issuePrice": "65.99 CNY",
@@ -2469,17 +2468,18 @@
         "东方财富新股"
       ],
       "ceo": "董事长：柴杰",
-      "summary": "超纯应材主要从事面向芯片制造、精密光学等领域，提供经材料改性、精密表面加工、精密清洗和特殊涂层工艺后的精密零部件产品及服务。。主要产品或服务类型包括半导体设备特殊涂层零部件、精密光学器件、特种材料。归类在创业板板块。",
+      "summary": "N超纯主要从事面向芯片制造、精密光学等领域，提供经材料改性、精密表面加工、精密清洗和特殊涂层工艺后的精密零部件产品及服务。。主要产品或服务类型包括半导体设备特殊涂层零部件、精密光学器件、特种材料。归类在创业板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "301717:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301717&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "502.31 CNY"
     },
     {
       "id": "a-688828",
       "market": "A",
       "code": "688828",
-      "name": "国仪公司",
+      "name": "N国仪-U",
       "exchange": "上交所科创板",
       "listingDate": "2026-08-11",
       "issuePrice": "21.22 CNY",
@@ -2490,17 +2490,18 @@
         "东方财富新股"
       ],
       "ceo": "董事长：荣星",
-      "summary": "国仪公司主要从事专注于高端科学仪器的研发，面向量子科技、材料科学、化学化工、生物医药、先进制造等多个领域，向全球范围内的高校及科研院所、企业提供科技前沿探索所需的高端科学仪器装备、以增强型量子等。主要产品或服务类型包括量子信息技术与自旋共振系列、电子显微镜系列、气体吸附分析系列、随钻测量系列。归类在科创板板块。",
+      "summary": "N国仪-U主要从事专注于高端科学仪器的研发，面向量子科技、材料科学、化学化工、生物医药、先进制造等多个领域，向全球范围内的高校及科研院所、企业提供科技前沿探索所需的高端科学仪器装备、以增强型量子等。主要产品或服务类型包括量子信息技术与自旋共振系列、电子显微镜系列、气体吸附分析系列、随钻测量系列。归类在科创板板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "688828:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688828&type=web",
-      "sourceName": "东方财富F10 / 新股数据"
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "100.5 CNY"
     },
     {
       "id": "a-920165",
       "market": "A",
       "code": "920165",
-      "name": "珈凯生物",
+      "name": "N珈凯",
       "exchange": "北交所",
       "listingDate": "2026-08-11",
       "issuePrice": "19.26 CNY",
@@ -2511,10 +2512,32 @@
         "东方财富新股"
       ],
       "ceo": "董事长：肖啸",
-      "summary": "珈凯生物主要从事化妆品功效原料的研发、生产及销售。。主要产品包括悦肤宁、植物舒敏剂、积雪草苷、维生素C乙基醚、β-葡聚糖、七叶树提取物、茵密莱、时光肽等。归类在北交所板块。",
+      "summary": "N珈凯主要从事化妆品功效原料的研发、生产及销售。。主要产品包括悦肤宁、植物舒敏剂、积雪草苷、维生素C乙基醚、β-葡聚糖、七叶树提取物、茵密莱、时光肽等。归类在北交所板块。",
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "920165:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920165&type=web",
+      "sourceName": "东方财富F10 / 新股数据",
+      "currentPrice": "53.1 CNY"
+    },
+    {
+      "id": "a-920138",
+      "market": "A",
+      "code": "920138",
+      "name": "杰理科技",
+      "exchange": "北交所",
+      "listingDate": "2026-08-12",
+      "issuePrice": "18.86 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：王艺辉",
+      "summary": "杰理科技主要从事集成电路设计、晶圆制造、封装测试的生产、制造和销售。。主要产品或服务类型包括蓝牙耳机芯片、蓝牙音箱芯片、智能穿戴芯片、智能物联终端芯片、通用多媒体芯片。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920138:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920138&type=web",
       "sourceName": "东方财富F10 / 新股数据"
     },
     {
