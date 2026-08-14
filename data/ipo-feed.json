@@ -1,12 +1,11 @@
 {
-  "updatedAt": "2026-08-13T03:25:23+00:00",
+  "updatedAt": "2026-08-14T03:22:32+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-    "港股现价已通过东方财富单股备用接口补充 2 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -1114,7 +1113,7 @@
       "searchCode": "920222:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920222&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "27.5 CNY"
+      "currentPrice": "28.38 CNY"
     },
     {
       "id": "us-aac",
@@ -1287,7 +1286,7 @@
       "searchCode": "001248:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001248&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.14 CNY"
+      "currentPrice": "12.83 CNY"
     },
     {
       "id": "a-920193",
@@ -1309,7 +1308,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "33.33 CNY"
+      "currentPrice": "32.49 CNY"
     },
     {
       "id": "us-miac",
@@ -1330,27 +1329,6 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "MIAC",
       "sourceUrl": "https://stockanalysis.com/stocks/miac/company/",
-      "sourceName": "StockAnalysis IPO Calendar"
-    },
-    {
-      "id": "us-mot",
-      "market": "US",
-      "code": "MOT",
-      "name": "MetaOptics Ltd",
-      "exchange": "NASDAQ",
-      "listingDate": "2026-07-02",
-      "issuePrice": "5.00 - 7.00 USD",
-      "sector": "Technology",
-      "tags": [
-        "Stock Lists",
-        "NASDAQ",
-        "美股"
-      ],
-      "ceo": "Mr. Aloysius Chua Hao Peng",
-      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Technology板块。",
-      "marketUrl": "https://www.google.com/finance/",
-      "searchCode": "MOT",
-      "sourceUrl": "https://stockanalysis.com/stocks/mot/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
@@ -1417,7 +1395,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.99 CNY"
+      "currentPrice": "20.76 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1461,7 +1439,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.88 CNY"
+      "currentPrice": "20.6 CNY"
     },
     {
       "id": "us-ccct",
@@ -1526,7 +1504,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "161.9 CNY"
+      "currentPrice": "161.5 CNY"
     },
     {
       "id": "a-920081",
@@ -1548,7 +1526,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "39.14 CNY"
+      "currentPrice": "38.7 CNY"
     },
     {
       "id": "us-samo",
@@ -1655,7 +1633,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.88 CNY"
+      "currentPrice": "34.55 CNY"
     },
     {
       "id": "us-csqr",
@@ -1742,7 +1720,7 @@
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "29.22 CNY"
+      "currentPrice": "26.62 CNY"
     },
     {
       "id": "us-brtm",
@@ -1807,7 +1785,7 @@
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "14.41 CNY"
+      "currentPrice": "13.82 CNY"
     },
     {
       "id": "a-920238",
@@ -1829,7 +1807,7 @@
       "searchCode": "920238:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920238&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "68.09 CNY"
+      "currentPrice": "65.76 CNY"
     },
     {
       "id": "us-mtak",
@@ -1915,7 +1893,7 @@
       "searchCode": "688825:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688825&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "54.58 CNY"
+      "currentPrice": "54.85 CNY"
     },
     {
       "id": "a-920176",
@@ -1937,7 +1915,7 @@
       "searchCode": "920176:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920176&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "67.48 CNY"
+      "currentPrice": "62.02 CNY"
     },
     {
       "id": "us-catl",
@@ -2002,7 +1980,7 @@
       "searchCode": "920065:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920065&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "36.38 CNY"
+      "currentPrice": "35.17 CNY"
     },
     {
       "id": "a-301677",
@@ -2024,7 +2002,7 @@
       "searchCode": "301677:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301677&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "62.73 CNY"
+      "currentPrice": "59.03 CNY"
     },
     {
       "id": "us-jmke",
@@ -2175,7 +2153,7 @@
       "searchCode": "920258:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920258&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "12.64 CNY"
+      "currentPrice": "11.98 CNY"
     },
     {
       "id": "a-001232",
@@ -2197,7 +2175,7 @@
       "searchCode": "001232:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001232&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "171.92 CNY"
+      "currentPrice": "161.45 CNY"
     },
     {
       "id": "us-fjdi",
@@ -2261,7 +2239,7 @@
       "searchCode": "920038:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920038&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "40.98 CNY"
+      "currentPrice": "38.74 CNY"
     },
     {
       "id": "us-atto",
@@ -2304,7 +2282,7 @@
       "searchCode": "603468:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH603468&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "27.19 CNY"
+      "currentPrice": "26.09 CNY"
     },
     {
       "id": "us-brve",
@@ -2347,7 +2325,7 @@
       "searchCode": "301707:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301707&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "95.57 CNY"
+      "currentPrice": "88.14 CNY"
     },
     {
       "id": "us-blsm",
@@ -2495,7 +2473,7 @@
       "searchCode": "301717:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301717&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "523.0 CNY"
+      "currentPrice": "528.16 CNY"
     },
     {
       "id": "a-688828",
@@ -2517,7 +2495,7 @@
       "searchCode": "688828:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688828&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "104.42 CNY"
+      "currentPrice": "100.58 CNY"
     },
     {
       "id": "a-920165",
@@ -2539,7 +2517,7 @@
       "searchCode": "920165:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920165&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "40.86 CNY"
+      "currentPrice": "38.73 CNY"
     },
     {
       "id": "us-ledr",
@@ -2582,7 +2560,7 @@
       "searchCode": "920138:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920138&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "47.06 CNY"
+      "currentPrice": "44.95 CNY"
     },
     {
       "id": "us-foil",
@@ -2627,6 +2605,69 @@
       "sourceName": "StockAnalysis IPO Calendar"
     },
     {
+      "id": "us-tbcv",
+      "market": "US",
+      "code": "TBCV",
+      "name": "Thunder Bridge Capital Partners V, Ltd.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-08-12",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Gary A. Simanson",
+      "summary": "Thunder Bridge Capital Partners V, Ltd.（TBCV）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "TBCV",
+      "sourceUrl": "https://stockanalysis.com/stocks/tbcv/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-nsai",
+      "market": "US",
+      "code": "NSAI",
+      "name": "NorthStrive Acquisition Corp I.",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-08-14",
+      "issuePrice": "10.00 USD",
+      "sector": "Financials",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Michel Tamer",
+      "summary": "NorthStrive Acquisition Corp I.（NSAI）是一家特殊目的收购公司（SPAC），上市后主要任务是寻找并完成并购标的，本身通常没有实体经营业务。归类在 SPAC 与资本市场板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "NSAI",
+      "sourceUrl": "https://stockanalysis.com/stocks/nsai/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "a-920107",
+      "market": "A",
+      "code": "920107",
+      "name": "恒兴股份",
+      "exchange": "北交所",
+      "listingDate": "2026-08-17",
+      "issuePrice": "16.02 CNY",
+      "sector": "北交所",
+      "tags": [
+        "北交所",
+        "A股",
+        "东方财富新股"
+      ],
+      "ceo": "董事长：李皞丹",
+      "summary": "恒兴股份主要从事紫外光(UV)固化涂料和PUR热熔胶的研发、生产和销售。。主要产品或服务类型包括UV涂料、PUR热熔胶。归类在北交所板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "920107:BJS",
+      "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920107&type=web",
+      "sourceName": "东方财富F10 / 新股数据"
+    },
+    {
       "id": "us-lynx",
       "market": "US",
       "code": "LYNX",
@@ -2645,6 +2686,27 @@
       "marketUrl": "https://www.google.com/finance/",
       "searchCode": "LYNX",
       "sourceUrl": "https://stockanalysis.com/stocks/lynx/company/",
+      "sourceName": "StockAnalysis IPO Calendar"
+    },
+    {
+      "id": "us-mot",
+      "market": "US",
+      "code": "MOT",
+      "name": "MetaOptics Ltd",
+      "exchange": "NASDAQ",
+      "listingDate": "2026-08-24",
+      "issuePrice": "5.00 - 7.00 USD",
+      "sector": "Technology",
+      "tags": [
+        "Stock Lists",
+        "NASDAQ",
+        "美股"
+      ],
+      "ceo": "Mr. Aloysius Chua Hao Peng",
+      "summary": "该公司业务与金融服务、资本市场或企业融资相关，具体收入结构以公司披露资料为准。归类在Technology板块。",
+      "marketUrl": "https://www.google.com/finance/",
+      "searchCode": "MOT",
+      "sourceUrl": "https://stockanalysis.com/stocks/mot/company/",
       "sourceName": "StockAnalysis IPO Calendar"
     }
   ]
