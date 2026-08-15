@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-08-14T03:22:32+00:00",
+  "updatedAt": "2026-08-15T02:11:00+00:00",
   "notes": [
     "自动更新：A股新股由东方财富/AKShare 同步；港股 IPO 尝试由同花顺/AKShare 同步；美股 IPO 日历由 StockAnalysis 同步。",
     "上市后的当前价格尝试由东方财富行情同步；行情可能有延迟，交易所与券商页面仍应作为最终核对来源。",
     "A股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "港股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
     "美股现价同步失败：('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "港股现价已通过东方财富单股备用接口补充 2 条。",
     "手工补充文件只用于修正自动数据中的公司中文名、简介、板块和主要管理层。",
     "A股、港股、美股的新股列表和上市后现价优先由自动同步脚本生成。"
   ],
@@ -250,7 +251,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX Newly Listed Securities",
-      "currentPrice": "64.30 HKD"
+      "currentPrice": "61.75 HKD"
     },
     {
       "id": "h-07688",
@@ -273,7 +274,7 @@
       "marketUrl": "https://www.google.com/finance/",
       "sourceUrl": "https://www.hkex.com.hk/Services/Trading/Securities/Trading-News/Newly-Listed-Securities",
       "sourceName": "HKEX / 东方财富港股 IPO",
-      "currentPrice": "16.68 HKD"
+      "currentPrice": "16.61 HKD"
     },
     {
       "id": "a-001237",
@@ -1308,7 +1309,7 @@
       "searchCode": "920193:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920193&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "32.49 CNY"
+      "currentPrice": "33.09 CNY"
     },
     {
       "id": "us-miac",
@@ -1395,7 +1396,7 @@
       "searchCode": "920189:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920189&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.76 CNY"
+      "currentPrice": "20.95 CNY"
     },
     {
       "id": "us-fdmm",
@@ -1439,7 +1440,7 @@
       "searchCode": "920136:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920136&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "20.6 CNY"
+      "currentPrice": "20.63 CNY"
     },
     {
       "id": "us-ccct",
@@ -1504,7 +1505,7 @@
       "searchCode": "301583:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301583&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "161.5 CNY"
+      "currentPrice": "161.85 CNY"
     },
     {
       "id": "a-920081",
@@ -1526,7 +1527,7 @@
       "searchCode": "920081:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920081&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.7 CNY"
+      "currentPrice": "39.13 CNY"
     },
     {
       "id": "us-samo",
@@ -1633,7 +1634,7 @@
       "searchCode": "920117:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920117&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "34.55 CNY"
+      "currentPrice": "34.65 CNY"
     },
     {
       "id": "us-csqr",
@@ -1720,7 +1721,7 @@
       "searchCode": "688806:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688806&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.62 CNY"
+      "currentPrice": "27.03 CNY"
     },
     {
       "id": "us-brtm",
@@ -1785,7 +1786,7 @@
       "searchCode": "920079:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920079&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "13.82 CNY"
+      "currentPrice": "13.85 CNY"
     },
     {
       "id": "a-920238",
@@ -1807,7 +1808,7 @@
       "searchCode": "920238:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920238&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "65.76 CNY"
+      "currentPrice": "65.4 CNY"
     },
     {
       "id": "us-mtak",
@@ -1893,7 +1894,7 @@
       "searchCode": "688825:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688825&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "54.85 CNY"
+      "currentPrice": "55.18 CNY"
     },
     {
       "id": "a-920176",
@@ -1915,7 +1916,7 @@
       "searchCode": "920176:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920176&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "62.02 CNY"
+      "currentPrice": "62.58 CNY"
     },
     {
       "id": "us-catl",
@@ -1980,7 +1981,7 @@
       "searchCode": "920065:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920065&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "35.17 CNY"
+      "currentPrice": "35.65 CNY"
     },
     {
       "id": "a-301677",
@@ -2002,7 +2003,7 @@
       "searchCode": "301677:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301677&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "59.03 CNY"
+      "currentPrice": "59.56 CNY"
     },
     {
       "id": "us-jmke",
@@ -2153,7 +2154,7 @@
       "searchCode": "920258:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920258&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "11.98 CNY"
+      "currentPrice": "12.25 CNY"
     },
     {
       "id": "a-001232",
@@ -2175,7 +2176,7 @@
       "searchCode": "001232:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ001232&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "161.45 CNY"
+      "currentPrice": "161.27 CNY"
     },
     {
       "id": "us-fjdi",
@@ -2239,7 +2240,7 @@
       "searchCode": "920038:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920038&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.74 CNY"
+      "currentPrice": "38.8 CNY"
     },
     {
       "id": "us-atto",
@@ -2282,7 +2283,7 @@
       "searchCode": "603468:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH603468&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "26.09 CNY"
+      "currentPrice": "25.93 CNY"
     },
     {
       "id": "us-brve",
@@ -2325,7 +2326,7 @@
       "searchCode": "301707:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301707&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "88.14 CNY"
+      "currentPrice": "88.66 CNY"
     },
     {
       "id": "us-blsm",
@@ -2473,7 +2474,7 @@
       "searchCode": "301717:SHE",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SZ301717&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "528.16 CNY"
+      "currentPrice": "538.0 CNY"
     },
     {
       "id": "a-688828",
@@ -2495,7 +2496,7 @@
       "searchCode": "688828:SHA",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=SH688828&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "100.58 CNY"
+      "currentPrice": "103.11 CNY"
     },
     {
       "id": "a-920165",
@@ -2517,7 +2518,7 @@
       "searchCode": "920165:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920165&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "38.73 CNY"
+      "currentPrice": "38.45 CNY"
     },
     {
       "id": "us-ledr",
@@ -2560,7 +2561,7 @@
       "searchCode": "920138:BJS",
       "sourceUrl": "https://emweb.eastmoney.com/PC_HSF10/CompanyManagement/Index?code=BJ920138&type=web",
       "sourceName": "东方财富F10 / 新股数据",
-      "currentPrice": "44.95 CNY"
+      "currentPrice": "45.24 CNY"
     },
     {
       "id": "us-foil",
